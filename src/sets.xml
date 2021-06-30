@@ -12,44 +12,43 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sets" permid="xcu">
     <!-- % TWJ, 2010/03/31 -->
     <!-- % Chapters now begin with Chapter 1 -->
-  <title>Preliminaries</title>
+  <title>Preliminares</title>
   <introduction permid="Put">
     <p permid="DBN">
-      A certain amount of mathematical maturity is necessary to find and study applications of abstract algebra.
-      A basic knowledge of set theory,
-      mathematical induction, equivalence relations, and matrices is a must.
-      Even more important is the ability to read and understand mathematical proofs.
-      In this chapter we will outline the background needed for a course in abstract algebra.
+      Uma certa quantidade de maturidade matemática é necessária para encontrar e estudar
+      aplicações da álgebra abstrata. Conhecimentos básicos de teoria dos conjuntos,
+      indução matemática, relações de equivalência e matrizes são imprescindíveis. Ainda
+      mais importante é a habilidade de ler e entender provas matemática. Nesse capítulo
+      resumimos os requisitos necessários para o curso de álgebra abstrata.
     </p>
   </introduction>
 
   <section xml:id="section-note-on-proofs" permid="yRH">
-    <title>A Short Note on Proofs</title>
+    <title>Uma Pequena Nota sobre Provas</title>
     <introduction permid="vBC">
       <p permid="jIW">
-        Abstract mathematics is different from other sciences.
-        In laboratory sciences such as chemistry and physics,
-        scientists perform experiments to discover new principles and verify theories.
-        Although mathematics is often motivated by physical experimentation or by computer simulations,
-        it is made rigorous through the use of logical arguments.
-        In studying abstract mathematics,
-        we take what is called an axiomatic approach;
-        that is, we take a collection of objects
-        <m>\mathcal S</m> and assume some rules about their structure.
-        These rules are called <term>axioms</term>.
-        Using the axioms for <m>\mathcal S</m>,
-        we wish to derive other information about
-        <m>\mathcal S</m> by using logical arguments.
-        We require that our axioms be consistent;
-        that is, they should not contradict one another.
-        We also demand that there not be too many axioms.
-        If a system of axioms is too restrictive,
-        there will be few examples of the mathematical structure.
+        A matemática abstrata é diferente de outras ciências. Em ciências
+        experimentais como química ou física, cientistas realizam experimentos
+        para descobrir novos princípios e verificar teorias. Embora a
+        matemática seja frequentemente motivada por experimentações físicas
+        ou por simulações computacionais, ela se torna rigorosa pelo uso
+        de argumentos lógicos.
+        Ao estudar álgebra abstrata nós seguimos uma abordagem chamada
+        axiomática; isto é, consideramos uma coleção de objetos 
+        <m>\mathcal S</m> e assumimos algumas regras sobre suas estruturas.
+        Tais regras são chamadas de <term>axiomas</term>. Usando os
+        axiomas para <m>\mathcal S</m>, nós gostaríamos de deduzir
+        outras informações sobre <m>\mathcal S</m> através do uso
+        de argumentos lógicos. Nós exigimos que nossos axiomas sejam
+        consistente; isto é, eles não podem contradizer uns aos outros. 
+        Também requeremos que não existam muitos axiomas. Se um sistema
+        de axiomas é restritivo demais haverá poucos exemplos
+        dessa estrutura matemática.
       </p>
 
       <p permid="PQf">
-        A <term>statement</term> in logic or mathematics is an assertion that is either true or false.
-        Consider the following examples:
+        Uma <term>afirmação</term> em lógica ou matemática é uma asserção que pode
+        ser verdadeira ou falsa. Considere os seguintes exemplos:
 
         <ul permid="nBE">
           <li permid="dcz">
@@ -60,7 +59,7 @@
 
           <li permid="JjI">
             <p permid="MsJ">
-              All cats are black.
+              Todos os gatos são pretos.
             </p>
           </li>
 
@@ -72,13 +71,13 @@
 
           <li permid="Vya">
             <p permid="YHb">
-              <m>2x = 6</m> exactly when <m>x = 4</m>.
+              <m>2x = 6</m> precisamente quando <m>x = 4</m>.
             </p>
           </li>
 
           <li permid="BFj">
             <p permid="EOk">
-              If <m>ax^2 + bx + c = 0</m> and <m>a \neq 0</m>, then
+              Se <m>ax^2 + bx + c = 0</m> e <m>a \neq 0</m>, então
               <me permid="IAb">
                 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
               </me>.
@@ -92,56 +91,58 @@
           </li>
         </ul>
 
-        All but the first  and last examples are statements,
-        and must be either true or false.
+        Todos, exceto o primeiro e último exemplos, são afirmações,
+        devem ser ou verdadeiras ou falsas.
       </p>
 
       <p permid="vXo">
-        A <term>mathematical proof</term>
-        is nothing more than a convincing argument about the accuracy of a statement.
-        Such an argument should contain enough detail to convince the audience;
-        for instance, we can see that the statement
-        <q><m>2x = 6</m> exactly when <m>x = 4</m></q>
-        is false by evaluating <m>2 \cdot 4</m> and noting that <m>6 \neq 8</m>,
-        an argument that would satisfy anyone.
-        Of course, audiences may vary widely:
-        proofs can be addressed to another student,
-        to a professor, or to the reader of a text.
-        If more detail than needed is presented in the proof,
-        then the explanation will be either long-winded or poorly written.
-        If too much detail is omitted,
-        then the proof may not be convincing.
-        Again it is important to keep the audience in mind.
-        High school students require much more detail than do graduate students.
-        A good rule of thumb for an argument in an introductory abstract algebra course is that it should be written to convince one's peers,
-        whether those peers be other students or other readers of the text.
+        Uma <term>prova matemática</term>, ou <term>demonstraçao</term>, nada
+        mais é do que um argumento
+        convincente sobre a veracidade de uma afirmação. Tal argumento
+        deve conter detalhes suficientes para convencer a audiência; por
+        exemplo, podemos ver que a afirmação
+        <q><m>2x = 6</m> precisamente quando <m>x = 4</m></q>
+        é falsa calculando  <m>2 \cdot 4</m> e observando que <m>6 \neq 8</m>,
+        um argumento que convenceria qualquer pessoa.
+        Obviamente, as audiências podem variar imensamente: provas podem ser
+        apresentadas a outro aluno, a um professor ou ao leitor de um texto.
+        Se mais detalhes do que necessários são apresentados na prova, então
+        a explicação será muito extensa ou má redigida. Se muitos detalhes
+        foram omitidos, então a prova pode não ser convincente. Novamente,
+        é importante ter em mente a audiência. Alunos de ensino médio
+        precisam de muito mais detalhes que alunos de doutorado. Uma boa
+        regra para a argi,emtaap em um curso introdutório de álgebra abstrata 
+        é que o argumento deve ser escrito de forma a convencer sejam
+        os colegas, sejam esses os alunos ou outros leitores do texto.
       </p>
 
       <p permid="cex">
-        Let us examine different types of statements.
-        A statement could be as simple as
-        <q><m>10/5 = 2</m>;</q> however,
-        mathematicians are usually interested in more complex statements such as <q>If <m>p</m>,
-        then <m>q</m>,</q> where <m>p</m> and <m>q</m> are both statements.
-        If certain statements are known or assumed to be true,
-        we wish to know what we can say about other statements.
-        Here <m>p</m> is called the <term>hypothesis</term>
-        and <m>q</m> is known as the <term>conclusion</term>.
-        Consider the following statement: If
-        <m>ax^2 + bx + c = 0</m> and <m>a \neq 0</m>, then
+        Examinamos diferentes tipos de afirmações. Uma afirmação pode
+        ser simples como  <q><m>10/5 = 2</m>;</q> no entanto,
+        matemáticos estão geralmente interessados em afirmações
+        mais complexas como  <q>Se <m>p</m>,
+        então <m>q</m>,</q> onde <m>p</m> e <m>q</m> são ambas afirmações.
+        Se determinadas afirmações são conhecidamente ou assumidamente
+        verdadeiras, gostaríamos de saber o que pode ser dito sobre
+        outras afirmações. Aqui <m>p</m> é chamada de <term>hipótese</term>
+        e <m>q</m> é chamado de <term>conclusão</term> ou 
+        <term>tese</term>.
+        Considere a seguinte afirmações: Se 
+        <m>ax^2 + bx + c = 0</m> e <m>a \neq 0</m>, então
         <me permid="oHk">
           x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
         </me>.
-        The hypothesis is <m>ax^2 + bx + c = 0</m> and <m>a \neq 0</m>;
-        the conclusion is
+        A hipótese é <m>ax^2 + bx + c = 0</m> e <m>a \neq 0</m>;
+        e a conclusão é
         <me permid="UOt">
           x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
         </me>.
-        Notice that the  statement says nothing about whether or not the hypothesis is true.
-        However, if this entire statement is true and we can show that
-        <m>ax^2 + bx + c = 0</m> with <m>a \neq 0</m> is true,
-        then the conclusion <em>must</em> be true.
-        A proof of this statement might simply be a series of equations:
+        Observe que a afirmação não afirma nada sobre a afirmação ser ou
+        não verdadeira. No entanto, se toda essa afirmação é verdadeira
+        e podemos mostrar que 
+        <m>ax^2 + bx + c = 0</m> com <m>a \neq 0</m> é verdadeira,
+        então a conclusão <em>deve</em> ser verdadeira.
+        A prova dessa afirmação pode ser simplesmente a série de equações:
         <md permid="AVC">
           <mrow>ax^2 + bx + c &amp; =  0</mrow>
           <mrow>x^2 + \frac{b}{a}x &amp; =  - \frac{c}{a}</mrow>
@@ -153,110 +154,119 @@
       </p>
 
       <p permid="IlG">
-        If we can prove a statement true,
-        then that statement is called a <term>proposition</term>.
-        A proposition of major importance is called a <term>theorem</term>.
-        Sometimes instead of proving a theorem or proposition all at once,
-        we break the proof down into modules;
-        that is, we prove several supporting propositions,
-        which are called <term>lemmas</term>,
-        and use the results of these propositions to prove the main result.
-        If we can prove a proposition or a theorem,
-        we will often, with very little effort,
-        be able to derive other related propositions called <term>corollaries</term>.
+        Se conseguirmos provar que uma afirmação é verdadeira, então a afirmação
+        é chamada de <term>proposição</term>. Uma proposição de
+        grande importância é chamada de <term>teorema</term>. As vezes, 
+        ao invés de provar um teorema ou uma proposição de uma só vez, 
+        dividimos a prova em módulos; isto é, provamos várias
+        proposições auxiliares, chamados de <term>lemas</term>, e usamos
+        os resultados dessas proposições para provar o
+        resultado principal. Se pudermos provar uma proposição ou
+        teorema, com frequência conseguiremos deduzir, com pouco esforço, 
+        outras proposições relacionadas, chamadas de <term>corolários</term>.
       </p>
     </introduction>
 
     <subsection xml:id="sets-subsection-cautions" permid="djD">
-      <title>Some Cautions and Suggestions</title>
+      <title>Algumas precauções e sugestões</title>
       <p permid="IVA">
-        There are several different strategies for proving propositions.
-        In addition to using different methods of proof,
-        students often make some common mistakes when they are first learning how to prove theorems.
-        To aid students who are studying abstract mathematics for the first time,
-        we list here some of the difficulties that they may encounter and some of the strategies of proof available to them.
-        It is a good idea to keep referring back to this list as a reminder.
-        (Other techniques of proof will become apparent throughout this chapter and the remainder of the text.)
-
+        Existem diversas estratégias distintas para provar proposições. Além
+        de utilizar os diferentes métodos de prova, estudantes frequentemente 
+        cometem alguns erros comuns quando estão aprendendo a provar
+        teoremas pela primeira vez. Para auxiliar os estudantes que estão 
+        começando a estudar álgebra abstrata, listamos algumas das dificuldades
+        que eles podem se deparar e algumas estratégias de demonstração
+        disponíveis para eles. É uma boa ideia se referir a essa lista
+        com frequência como lembrete. (outras técnicas de demonstração
+        aparecerão no decorrer desse capítulo e no restante do texto.)
+     
         <ul permid="QOh">
           <li permid="NTB">
             <p permid="RcC">
-              A theorem cannot be proved by example;
-              however, the standard way to show that a statement is not a theorem is to provide a counterexample.
+              Um teorema não pode ser provado via exemplos; no entanto, a forma
+              padrão para mostrar que uma afirmação não é um teorema é
+              exibir um contra-exemplo.
             </p>
           </li>
 
           <li permid="uaK">
             <p permid="xjL">
-              Quantifiers are important.
-              Words and phrases such as <em>only</em>, <em>for all</em>,
-              <em>for every</em>, and <em>for some</em>
-              possess different meanings.
+              Quantificadores são importantes.
+              Palavras e frases como <em>apenas</em>, <em>para todo</em>,
+              <em>para cada</em>, e <em>para algum</em>
+              possuem significados diferentes.
             </p>
           </li>
 
           <li permid="ahT">
             <p permid="dqU">
-              Never assume any hypothesis that is not explicitly stated in the theorem.
+              Nunca assuma nenhuma hipótese que não está explicitamente 
+              enunciada no teorema. 
+              <em>Você não pode tomar algo como garantido.</em>
               <em>You cannot take things for granted.</em>
             </p>
           </li>
 
           <li permid="Gpc">
             <p permid="Jyd">
-              Suppose you wish to show that an object
-              <em>exists</em> and is <em>unique</em>.
-              First show that there actually is such an object.
-              To show that it is unique, assume that there are two such objects,
-              say <m>r</m> and <m>s</m>, and then show that <m>r = s</m>.
+              Suponha que você deseja mostra que um objeto 
+              <em>existe</em> e é <em>único</em>.
+              Primeiramente mostre que realmente existe tal objeto. Para
+              mostrar que ele é único, assuma que existam dois desses objetos,
+              digamos <m>r</m> e <m>s</m>, e então mostre que <m>r = s</m>.
             </p>
           </li>
 
           <li permid="mwl">
             <p permid="pFm">
-              Sometimes it is easier to prove the contrapositive of a statement.
-              Proving the statement <q>If <m>p</m>,
-              then <m>q</m></q> is exactly the same as proving the statement
-              <q>If not <m>q</m>, then not <m>p</m>.</q>
+              As vezes é mais fácil provar a contrapositiva de alguma afirmação.
+              Provar a afirmação <q>Se <m>p</m>,
+              então <m>q</m></q> é exatamente o mesmo que provar a afirmação
+              <q>Se não <m>q</m>, então não <m>p</m>.</q>
             </p>
           </li>
 
           <li permid="SDu">
             <p permid="VMv">
-              Although it is usually better to find a direct proof of a theorem,
-              this task can sometimes be difficult.
-              It may be easier to assume that the theorem that you are trying to prove is false,
-              and to hope that in the course of your argument you are forced to make some statement that cannot possibly be true.
+              Embora seja geralmente melhor encontrar uma prova direta
+              de um teorema, esta tarefa pode ser difícil em alguns casos.
+              Uma tarefa mais fácil pode ser assumir que o teorema que
+              se deseja provar seja falso, e esperar que, no decorrer do seu
+              argumento, você seja forçado a fazer alguma afirmação que
+              não pode ser verdadeira.
             </p>
           </li>
         </ul>
 
-        Remember that one of the main objectives of higher mathematics is proving theorems.
-        Theorems are tools that make new and productive applications of mathematics possible.
-        We use examples to give insight  into existing theorems and to foster intuitions as to what new theorems might be true.
-        Applications, examples,
-        and proofs are tightly interconnected<mdash/>much more so than they may seem at first appearance.
+        Relembre que um dos principais objetivos da matemática avançada
+        é provar teoremas. Teoremas são ferramentas que possibilitam a criação
+        de novas e produtivas aplicações matemáticas.
+        Utilizamos exemplos para fornecer algumas perspectivas dos teoremas
+        existentes e para fomentar uma intuição para novos teoremas. Aplicações,
+        exemplos e provas são fortemente interconectadas<mdash/> muito
+        mais do que podem parecer à primeira vista.
       </p>
     </subsection>
 
   </section>
 
   <section xml:id="section-sets-and-equivalence-relations" permid="eYQ">
-    <title>Sets and Equivalence Relations</title>
+    <title>Conjuntos e Relações de Equivalência</title>
     <subsection xml:id="sets-subsection-set-theory" permid="JqM">
-      <title>Set Theory</title>
+      <title>Teoria dos Conjuntos</title>
       <p permid="pcJ">
-        A <term>set</term> is a well-defined collection of objects;
-        that is, it is defined in such a manner that we can determine for any given object <m>x</m> whether or not <m>x</m> belongs to the set.
-        The objects that belong to a set are called its
-        <term>elements</term> or <term>members</term>.
-        We will denote sets by capital letters,
-        such as <m>A</m> or <m>X</m>;
-        if <m>a</m> is an element of the set <m>A</m>, we write <m>a \in A</m>.
+        Um <term>conjunto</term> é uma coleção bem definida de objetos;
+        ou seja, é definido de maneira que, para qualquer objeto dado <m>x</m>, 
+        é possível de determinar se <m>x</m> pertence ou não ao conjunto.
+        Os objetos que pertencem ao conjunto são chamados de seus 
+        <term>elementos</term> ou <term>membros</term>.
+        Nós denotaremos conjuntos por letras maiúsculas, como
+        <m>A</m> ou <m>X</m>;
+        se <m>a</m> é um elemento do conjunto <m>A</m>, escrevemos <m>a \in A</m>.
 
         <notation>
           <usage>a \in A</usage>
-          <description><m>a</m> is in the set <m>A</m></description>
+          <description><m>a</m> é um elemento do conjunto <m>A</m></description>
         </notation>
 
       </p>
@@ -264,190 +274,198 @@
       <!--Todo Make notation table-->
 
       <p permid="VjS">
-        A set is usually specified either by listing all of its elements inside a pair of braces or by stating the property that determines whether or not an object <m>x</m> belongs to the set.
-        We might write
+        Um conjunto é usualmente especificado listando todos os seus elementos 
+        entre par de chaves ou indicando a propriedade que determina se um 
+        objeto <m>x</m> pertence ou não a um conjunto. 
+        Podemos escrever
         <me permid="hcL">
           X = \{ x_1, x_2, \ldots, x_n \}
         </me>
-        for a set containing elements <m>x_1, x_2, \ldots, x_n</m> or
+        para um conjunto contendo os elementos <m>x_1, x_2, \ldots, x_n</m> ou
         <me permid="NjU">
-          X = \{ x :x \text{ satisfies }{\mathcal P}\}
+          X = \{ x :x \text{ satisfaz }{\mathcal P}\}
         </me>
-        if each <m>x</m> in <m>X</m> satisfies a certain property <m>{\mathcal P}</m>.
-        For example, if <m>E</m> is the set of even positive integers,
-        we can describe <m>E</m> by writing either
+        se cada <m>x</m> em <m>X</m> satisfaz uma certa propriedade <m>{\mathcal P}</m>.
+        Por exemplo, se <m>E</m> é o conjunto dos inteiros positivos, 
+        podemos descrever <m>E</m> escrevendo
         <me permid="trd">
-          E = \{2, 4, 6, \ldots \} \quad \text{or} \quad E = \{ x : x \text{ is an even integer and } x \gt 0 \}
+          E = \{2, 4, 6, \ldots \} \quad \text{ou} \quad E = \{ x : x \text{ 
+          inteiro par e } x \gt 0 \}
         </me>.
-        We write <m>2 \in E</m> when we want to say that 2 is in the set <m>E</m>,
-        and <m>-3 \notin E</m> to say that <m>-3</m> is not in the set <m>E</m>.
+        Escrevemos <m>2 \in E</m> quando queremos afirmar que <m>2</m> está no
+        conjunto <m>E</m>,
+        e <m>-3 \notin E</m> para afirmar que <m>-3</m> não está no conjunto <m>E</m>.
       </p>
 
       <p permid="Brb">
-        Some of the more important sets that we will consider are the following:
+        Alguns dos conjuntos mais importantes que nós vamos considerar são os seguintes:
         <md permid="Zym">
-          <mrow>{\mathbb N} = \{n: n \text{ is a natural number}\}  = \{1, 2, 3, \ldots \};</mrow>
-          <mrow>{\mathbb Z} = \{n : n \text{ is an integer} \} = \{\ldots, -1, 0, 1,  2, \ldots \};</mrow>
-          <mrow>{\mathbb Q} = \{r : r \text{ is a rational number}\} = \{p/q : p, q \in {\mathbb Z} \text{ where } q \neq 0\};</mrow>
-          <mrow>{\mathbb R} = \{ x : x \text{ is a real number} \};</mrow>
-          <mrow>{\mathbb C} = \{z : z \text{ is a complex number}\}</mrow>
+          <mrow>{\mathbb N} = \{n: n \text{ é um número natural}\}  = \{1, 2, 3, \ldots \};</mrow>
+          <mrow>{\mathbb Z} = \{n : n \text{ é um inteiro} \} = \{\ldots, -1, 0, 1,  2, \ldots \};</mrow>
+          <mrow>{\mathbb Q} = \{r : r \text{ é um número racional}\} = \{p/q : p, q \in {\mathbb Z} \text{ onde } q \neq 0\};</mrow>
+          <mrow>{\mathbb R} = \{ x : x \text{ é um número real} \};</mrow>
+          <mrow>{\mathbb C} = \{z : z \text{ é um número complexo}\}</mrow>
         </md>.
 
         <notation>
           <usage>{\mathbb N}</usage>
-          <description>the natural numbers</description>
+          <description>números naturais</description>
         </notation>
 
         <notation>
           <usage>{\mathbb Z}</usage>
-          <description>the integers</description>
+          <description>inteiros</description>
         </notation>
 
         <notation>
           <usage>{\mathbb Q}</usage>
-          <description>the rational numbers</description>
+          <description>números racionais</description>
         </notation>
 
         <notation>
           <usage>{\mathbb R}</usage>
-          <description>the real numbers</description>
+          <description>números reais</description>
         </notation>
 
         <notation>
           <usage>{\mathbb C}</usage>
-          <description>the complex numbers</description>
+          <description>números complexos</description>
         </notation>
 
       </p>
 
       <p permid="hyk">
-        We can find various relations between sets as well as perform operations on sets.
-        A set <m>A</m> is a <term>subset</term> of <m>B</m>,
-        written <m>A \subset B</m> or <m>B \supset A</m>,
-        if every element of <m>A</m> is also an element of <m>B</m>.
+        Podemos descrever várias relações entre conjuntos, bem como
+        efetuar operações com conjuntos.
+        Um conjunto <m>A</m> é um <term>subconjunto</term> de <m>B</m>,
+        escrevemos <m>A \subset B</m> ou <m>B \supset A</m>,
+        se todo elemento <m>A</m> também é um elemento de <m>B</m>.
 
         <notation>
           <usage>A \subset B</usage>
-          <description><m>A</m> is a subset of <m>B</m></description>
+          <description><m>A</m> é um subconjunto de  <m>B</m></description>
         </notation>
 
-        For example,
+        Por exemplo,
         <me permid="FFv">
           \{4,5,8\} \subset \{2, 3, 4, 5, 6, 7, 8, 9 \}
         </me>
-        and
+        e
         <me permid="lME">
           {\mathbb N} \subset {\mathbb Z} \subset {\mathbb Q} \subset {\mathbb R} \subset {\mathbb C}
         </me>.
-        Trivially, every set is a subset of itself.
-        A set <m>B</m> is a <term>proper subset</term>
-        of a set <m>A</m> if <m>B \subset A</m> but <m>B \neq A</m>.
-        If <m>A</m> is not a subset of <m>B</m>,
-        we write <m>A \notsubset B</m>;
-        for example, <m>\{4, 7, 9\} \notsubset \{2, 4, 5,  8, 9 \}</m>.
-        Two sets are <term>equal</term>, written <m>A = B</m>,
-        if we can show that <m>A \subset B</m> and <m>B \subset A</m>.
+        Trivialmente, todo conjunto é um subconjunto de si mesmo. Um 
+        conjunto <m>B</m> é um <term>subconjunto próprio</term>
+        de um conjunto <m>A</m> se <m>B \subset A</m> mas <m>B \neq A</m>.
+        Se <m>A</m> não é um subconjunto de <m>B</m>,
+        escrevemos <m>A \notsubset B</m>;
+        por exemplo, <m>\{4, 7, 9\} \notsubset \{2, 4, 5,  8, 9 \}</m>.
+        Dois conjuntos são <term>iguais</term>, escrevemos <m>A = B</m>,
+        se for possível mostrar que <m>A \subset B</m> e <m>B \subset A</m>.
       </p>
 
       <p permid="NFt">
-        It is convenient to have a set with no elements in it.
-        This set is called the <term>empty set</term>
-        and is denoted by <m>\emptyset</m>.
-        Note that the empty set is a subset of every set.
+        É conveniente que exista um conjunto sem nenhum elemento.
+        Esse conjunto é chamado de <term> conjunto vazio</term>
+        e é denotado por <m>\emptyset</m>. Observe que o conjunto
+        vazio é um subconjunto de todo conjunto.
 
         <notation>
           <usage>\emptyset</usage>
-          <description>the empty set</description>
+          <description>o conjunto vazio</description>
         </notation>
-
       </p>
 
+
+
       <p permid="tMC">
-        To construct new sets out of old sets,
-        we can perform certain operations:
-        the <term>union</term> <m>A \cup B</m> of two sets <m>A</m> and <m>B</m> is defined as
+        Para construir novos conjuntos a partir de outros podemos realizar
+        certas operações:
+        a  <term>união</term> <m>A \cup B</m> de dois conjuntos <m>A</m>
+        e <m>B</m> é definida como
         <me permid="RTN">
-          A \cup B = \{x : x \in A \text{ or } x \in B \};
+          A \cup B = \{x : x \in A \text{ ou } x \in B \};
         </me>
-        the <term>intersection</term> of <m>A</m> and <m>B</m>  is defined by
+        a <term>interseção</term> de <m>A</m> and <m>B</m>  é definida por
         <me permid="yaW">
-          A \cap B = \{x :  x \in A \text{ and } x \in B \}
+          A \cap B = \{x :  x \in A \text{ e } x \in B \}
         </me>.
 
         <notation>
           <usage>A \cup B</usage>
-          <description>the union of sets <m>A</m> and <m>B</m></description>
+          <description>a união dos conjuntos <m>A</m> e <m>B</m></description>
         </notation>
 
         <notation>
           <usage>A \cap B</usage>
-          <description>the intersection of sets <m>A</m> and <m>B</m></description>
+          <description>a interseção dos conjuntos <m>A</m> e <m>B</m></description>
         </notation>
 
-        If <m>A = \{1, 3, 5\}</m> and <m>B = \{ 1, 2, 3, 9 \}</m>, then
+        Se <m>A = \{1, 3, 5\}</m> e <m>B = \{ 1, 2, 3, 9 \}</m>, então
         <me permid="eif">
-          A \cup B = \{1, 2, 3, 5, 9 \} \quad \text{and} \quad A \cap B = \{ 1, 3 \}
+          A \cup B = \{1, 2, 3, 5, 9 \} \quad \text{e} \quad A \cap B = \{ 1, 3 \}
         </me>.
-        We can consider the union and the intersection of more than two sets.
-        In this case we write
+        Podemos considerar a união e a interseção de mais de dois conjuntos. Nesse
+        caso escrevemos
         <me permid="Kpo">
           \bigcup_{i = 1}^{n} A_{i} = A_{1} \cup \ldots \cup A_n
         </me>
-        and
+        e
         <me permid="qwx">
           \bigcap_{i = 1}^{n} A_{i} = A_{1} \cap \ldots \cap A_n
         </me>
-        for the union and intersection, respectively,
-        of the sets <m>A_1, \ldots, A_n</m>.
+        para a união e interseção, respectivamente, dos conjuntos
+        <m>A_1, \ldots, A_n</m>.
       </p>
             <!-- Added comma after \ldots - TWJ 12/16/2010 -->
       <p permid="ZTL">
-        When two sets have no elements in common,
-        they are said to be <term>disjoint</term>;
-        for example,
-        if <m>E</m> is the set of even integers and <m>O</m> is the set of odd integers,
-        then <m>E</m> and <m>O</m> are disjoint.
-        Two sets <m>A</m> and <m>B</m> are disjoint exactly when <m>A \cap B = \emptyset</m>.
+        Quando dois conjuntos não possuem elementos em comum, eles são ditos
+        <term>disjuntos</term>;
+        por exemplo,
+        se <m>P</m> é o conjunto de inteiros pares e <m>I</m> é o conjunto
+        dos inteiros ímpares, então <m>P</m> e <m>I</m> são disjuntos.
+        Dois conjuntos <m>A</m> and <m>B</m> são disjuntos exatamente
+        quando <m>A \cap B = \emptyset</m>.
       </p>
 
       <p permid="GaU">
-        Sometimes we will work within one fixed set <m>U</m>,
-        called the <term>universal set</term>.
-        For any set <m>A \subset U</m>,
-        we define the <term>complement</term> of <m>A</m>,
-        denoted by <m>A'</m>, to be the set
+        Eventualmente vamos trabalhar dentro de um conjunto fixado <m>U</m>,
+        chamado de <term>conjunto universo</term>.
+        Para cada conjunto <m>A \subset U</m>,
+        definimos o <term>complementar</term> de <m>A</m>,
+        denotado por <m>A'</m>, como o conjunto
 
         <notation>
           <usage>A'</usage>
-          <description>complement of the set <m>A</m></description>
+          <description>complementar do conjunto <m>A</m></description>
         </notation>
 
         <me permid="WDG">
-          A' = \{ x : x \in U \text{ and } x \notin A \}
+          A' = \{ x : x \in U \text{ e } x \notin A \}
         </me>.
       </p>
 
       <p permid="mid">
-        We define the <term>difference</term>
-        of two sets <m>A</m> and <m>B</m> to be
+        Definimos a <term>diferença</term> de dois conjuntos <m>A</m> e <m>B</m> 
+        como
 
         <notation>
           <usage>A \setminus B</usage>
-          <description>difference between sets <m>A</m> and <m>B</m></description>
+          <description>diferença entre os conjuntos <m>A</m> e <m>B</m></description>
         </notation>
 
         <me permid="CKP">
-          A \setminus B = A \cap B'  = \{ x : x \in A \text{ and } x \notin B \}
+          A \setminus B = A \cap B'  = \{ x : x \in A \text{ e } x \notin B \}
         </me>.
       </p>
 
       <example xml:id="example-sets-operations" permid="DBA">
         <p permid="gew">
-          Let <m>{\mathbb R}</m> be the universal set and suppose that
+          Seja <m>{\mathbb R}</m> o conjunto universo e suponha que
           <me permid="iRY">
-            A = \{ x \in {\mathbb R} : 0 \lt x \leq 3 \} \quad \text{and} \quad B = \{ x \in {\mathbb R} : 2 \leq x \lt 4 \}
+            A = \{ x \in {\mathbb R} : 0 \lt x \leq 3 \} \quad \text{e} \quad B = \{ x \in {\mathbb R} : 2 \leq x \lt 4 \}
           </me>.
-          Then
+          Então
           <md permid="OZh">
             <mrow>A \cap B &amp; =  \{ x \in {\mathbb R} : 2 \leq x \leq 3 \}</mrow>
             <mrow>A \cup B &amp; =  \{ x \in {\mathbb R} : 0 \lt x \lt 4 \}</mrow>
@@ -460,32 +478,32 @@
       <proposition permid="Xur">
         <statement>
           <p permid="TQe">
-            Let <m>A</m>, <m>B</m>, and <m>C</m> be sets.
-            Then
+            Sejam <m>A</m>, <m>B</m>, e <m>C</m> conjuntos.
+            Então
 
             <ol permid="Huv">
               <li permid="rge">
                 <p permid="BTE">
                   <m>A \cup A = A</m>, <m>A \cap A = A</m>,
-                  and <m>A \setminus A = \emptyset</m>;
+                  e <m>A \setminus A = \emptyset</m>;
                 </p>
               </li>
 
               <li permid="Xnn">
                 <p permid="iaN">
-                  <m>A \cup \emptyset = A</m> and <m>A \cap \emptyset = \emptyset</m>;
+                  <m>A \cup \emptyset = A</m> e <m>A \cap \emptyset = \emptyset</m>;
                 </p>
               </li>
 
               <li permid="Duw">
                 <p permid="OhW">
-                  <m>A \cup (B \cup C) = (A \cup B) \cup C</m> and <m>A \cap (B \cap C) = (A \cap B) \cap C</m>;
+                  <m>A \cup (B \cup C) = (A \cup B) \cup C</m> e <m>A \cap (B \cap C) = (A \cap B) \cap C</m>;
                 </p>
               </li>
 
               <li permid="jBF">
                 <p permid="upf">
-                  <m>A \cup B = B \cup A</m> and <m>A \cap B = B \cap A</m>;
+                  <m>A \cup B = B \cup A</m> e <m>A \cap B = B \cap A</m>;
                 </p>
               </li>
 
@@ -506,48 +524,48 @@
 
         <proof permid="gsE">
           <p permid="tyh">
-            We will prove (1) and (3) and leave the remaining results to be proven in the exercises.
+            Provamos (1) e (3) e deixamos os resultados restantes para serem
+            provados nos exercícios.
           </p>
 
           <p permid="ZFq">
-            (1) Observe that
+            (1) Observe que
             <md permid="vgq">
-              <mrow>A \cup A &amp; =  \{ x :  x \in A \text{ or } x \in A \}</mrow>
+              <mrow>A \cup A &amp; =  \{ x :  x \in A \text{ ou } x \in A \}</mrow>
               <mrow>&amp; =  \{ x : x \in A \}</mrow>
               <mrow>&amp; =  A</mrow>
             </md>
             and
             <md permid="bnz">
-              <mrow>A \cap A &amp; =  \{ x : x \in A \text{ and } x \in A \}</mrow>
+              <mrow>A \cap A &amp; =  \{ x : x \in A \text{ e } x \in A \}</mrow>
               <mrow>&amp; =  \{ x : x \in A  \}</mrow>
               <mrow>&amp; =  A</mrow>
             </md>.
-            Also, <m>A \setminus A = A \cap A' = \emptyset</m>.
+            Também, <m>A \setminus A = A \cap A' = \emptyset</m>.
           </p>
 
           <p permid="FMz">
-            (3) For sets <m>A</m>, <m>B</m>, and <m>C</m>,
+            (3) Para conjuntos <m>A</m>, <m>B</m>, e <m>C</m>,
             <md permid="HuI">
-              <mrow>A \cup (B \cup C) &amp; = A \cup \{ x : x \in B \text{ or } x \in C \}</mrow>
-              <mrow>&amp; = \{ x : x \in A \text{ or } x \in B, \text{ or } x \in C \}</mrow>
-              <mrow>&amp; = \{ x : x \in A \text{ or } x \in B \} \cup C</mrow>
+              <mrow>A \cup (B \cup C) &amp; = A \cup \{ x : x \in B \text{ ou } x \in C \}</mrow>
+              <mrow>&amp; = \{ x : x \in A \text{ ou } x \in B, \text{ ou } x \in C \}</mrow>
+              <mrow>&amp; = \{ x : x \in A \text{ ou } x \in B \} \cup C</mrow>
               <mrow>&amp; = (A \cup B) \cup C</mrow>
             </md>.
-            A similar argument proves that  <m>A \cap (B \cap C) = (A \cap B) \cap C</m>.
+            Um argumento semelhante prova que <m>A \cap (B \cap C) = (A \cap B) \cap C</m>.
           </p>
         </proof>
       </proposition>
 
       <theorem permid="rni">
-        <title>De Morgan's Laws</title>
+        <title>Leis de De Morgan</title>
         <idx>
-        <h>De Morgan's laws</h>
-        <h>for sets</h>
+        <h>Leis de De Morgan</h>
+        <h>para conjuntos</h>
         </idx>
         <statement>
           <p permid="vnu">
-            Let <m>A</m> and <m>B</m> be sets.
-            Then
+            Sejam <m>A</m> e <m>B</m> conjuntos. Então
 
             <ol permid="vgd">
               <li permid="bXg">
@@ -567,42 +585,42 @@
 
         <proof permid="HPU">
           <p permid="lTI">
-            (1) If <m>A \cup B = \emptyset</m>,
-            then the theorem follows immediately since both <m>A</m> and <m>B</m> are the empty set.
-            Otherwise, we must show that
-            <m>(A \cup B)' \subset A' \cap B'</m> and <m>(A \cup B)' \supset A' \cap B'</m>.
-            Let <m>x \in (A \cup B)'</m>.
-            Then <m>x \notin A \cup B</m>.
-            So <m>x</m> is neither in <m>A</m> nor in <m>B</m>,
-            by the definition of the union of sets.
-            By the definition of the complement,
+            (1) Se <m>A \cup B = \emptyset</m>,
+            então o teorema segue de imadiato uma vez que ambos <m>A</m> e <m>B</m> são
+            vazios.
+            Caso contrário, devemos mostrar que
+            <m>(A \cup B)' \subset A' \cap B'</m> e <m>(A \cup B)' \supset A' \cap B'</m>.
+            Tome <m>x \in (A \cup B)'</m>.
+            Então <m>x \notin A \cup B</m>.
+            Assim <m>x</m> não está em <m>A</m> nem em <m>B</m>,
+            pela definição de união de conjuntos.
+            Pela definição de complemento,
             <m>x \in A'</m> and <m>x \in B'</m>.
-            Therefore, <m>x \in A' \cap B'</m> and we have <m>(A \cup B)' \subset A' \cap B'</m>.
+            Portanto, <m>x \in A' \cap B'</m> e temos que <m>(A \cup B)' \subset A' \cap B'</m>.
           </p>
 
           <p permid="SaR">
-            To show the reverse inclusion,
-            suppose that <m>x \in A' \cap B'</m>.
-            Then <m>x \in A'</m> and <m>x \in B'</m>,
-            and so <m>x \notin A</m> and <m>x \notin B</m>.
-            Thus <m>x \notin A \cup B</m> and so <m>x \in (A \cup B)'</m>.
-            Hence, <m>(A \cup B)' \supset A' \cap B'</m> and so <m>(A \cup B)' = A' \cap B'</m>.
+            Para mostrar a inclusão contrária, suponha que  <m>x \in A' \cap B'</m>.
+            Então <m>x \in A'</m> e <m>x \in B'</m>,
+            portanto <m>x \notin A</m> e <m>x \notin B</m>.
+            Logo <m>x \notin A \cup B</m>, portanto  <m>x \in (A \cup B)'</m>.
+            Assim, <m>(A \cup B)' \supset A' \cap B'</m>, portanto <m>(A \cup B)' = A' \cap B'</m>.
           </p>
 
           <p permid="yia">
-            The proof of (2) is left as an exercise.
+            A prova de (2) é deixada como exercício.
           </p>
         </proof>
       </theorem>
 
       <example xml:id="example-sets-other-relations" permid="jIJ">
         <p permid="MlF">
-          Other relations between sets often hold true.
-          For example,
+          Outras relações entre conjuntos também podem ser encontradas.
+          Por exemplo
           <me permid="nBR">
             ( A \setminus B) \cap (B \setminus A) = \emptyset
           </me>.
-          To see that this is true, observe that
+          Para verificar que isso é verdade, observe que
           <md permid="TJa">
             <mrow>( A \setminus B) \cap (B \setminus A) &amp; = ( A \cap B') \cap (B \cap A')</mrow>
             <mrow>&amp; = A \cap A' \cap B \cap B'</mrow>
@@ -613,33 +631,31 @@
     </subsection>
 
     <subsection xml:id="sets-subsection-cartesian-products" permid="pxV">
-      <title>Cartesian Products and Mappings</title>
+      <title>Produtos cartesianos e funções</title>
       <p permid="Spm">
-        Given sets <m>A</m> and <m>B</m>,
-        we can define a new set <m>A \times B</m>,
-        called the <term>Cartesian product</term>
-        of <m>A</m> and <m>B</m>,
-        as a set of ordered pairs.
-        That is,
-
+        Dados conjuntos <m>A</m> e <m>B</m>,
+        podemos definir um novo conjunto <m>A \times B</m>,
+        chamado de  <term>produto cartesiano</term>
+        de <m>A</m> e <m>B</m>,
+        como o conjunto dos pares ordenados. Ou seja, 
         <notation>
           <usage>A \times B</usage>
-          <description>Cartesian product of sets <m>A</m> and <m>B</m></description>
+          <description>Produto cartesiano dos conjuntos <m>A</m> e <m>B</m></description>
         </notation>
 
         <me permid="zQj">
-          A \times B = \{ (a,b) : a \in A \text{ and } b \in B \}
+          A \times B = \{ (a,b) : a \in A \text{ e } b \in B \}
         </me>.
       </p>
 
       <example xml:id="example-sets-cartesian-products" permid="cek">
         <p permid="ssO">
-          If <m>A = \{ x, y \}</m>, <m>B = \{ 1, 2, 3 \}</m>,
-          and <m>C = \emptyset</m>, then <m>A \times B</m> is the set
+          Se <m>A = \{ x, y \}</m>, <m>B = \{ 1, 2, 3 \}</m>,
+          e <m>C = \emptyset</m>, then <m>A \times B</m> é o conjunto
           <me permid="fXs">
             \{ (x, 1), (x, 2), (x, 3), (y, 1), (y, 2), (y, 3) \}
           </me>
-          and
+          e
           <me permid="MeB">
             A \times C = \emptyset
           </me>.
@@ -647,60 +663,66 @@
       </example>
 
       <p permid="ywv">
-        We define the <term>Cartesian product of <m>n</m> sets</term> to be
+        Definimos o <term>produto cartesiano de <m>n</m> conjuntos</term> como
         <me permid="slK">
           A_1 \times \cdots \times A_n = \{ (a_1, \ldots, a_n): a_i \in A_i \text{ for } i = 1, \ldots, n \}
         </me>.
-        If <m>A = A_1 = A_2 = \cdots = A_n</m>,
-        we often write <m>A^n</m> for <m>A \times \cdots \times A</m>
-        (where <m>A</m> would be written <m>n</m> times).
+        Se <m>A = A_1 = A_2 = \cdots = A_n</m>,
+        geralmente escrevemos <m>A^n</m> para <m>A \times \cdots \times A</m>
+        (onde <m>A</m> estaria escrito <m>n</m> vezes).
 
         <notation>
           <usage>A^n</usage>
-          <description><m>A \times \cdots \times A</m> (<m>n</m> times)</description>
+          <description><m>A \times \cdots \times A</m> (<m>n</m> vezes)</description>
         </notation>
 
-        For example,
-        the set <m>{\mathbb R}^3</m> consists of all of 3-tuples of real numbers.
+        Por exemplo,
+        o conjunto <m>{\mathbb R}^3</m> consiste de todas as 3-uplas
+        de números reais.
       </p>
 
       <p permid="eDE">
-        Subsets of <m>A \times B</m> are called <term>relations</term>.
-        We will define a  <term>mapping</term><idx><h>Mapping</h><see>Function</see></idx> or
-        <term>function</term><idx><h>Function</h><h>definition of</h></idx>
-        <m>f \subset A \times B</m> from a set <m>A</m> to a set <m>B</m> to be the special type of relation where each element <m>a \in A</m> has a unique element <m>b \in B</m> such that <m>(a, b) \in f</m>.
-        Another way of saying this is that for every element in <m>A</m>,
-        <m>f</m> assigns a unique element in <m>B</m>.
-        We usually write <m>f:A \rightarrow B</m> or <m>A \stackrel{f}{\rightarrow} B</m>.
-        Instead of writing down ordered pairs  <m>(a,b) \in A \times B</m>,
-        we write <m>f(a) = b</m> or <m>f : a \mapsto b</m>.
-        The set  <m>A</m> is called the
-        <term>domain</term><idx><h>Function</h><h>domain of</h></idx> of <m>f</m> and
+        Subconjuntos de <m>A \times B</m> são chamados de <term>relações</term>.
+        Definiremos um <term>mapa</term><idx><h>Mapa</h><see>Função</see></idx> ou
+        <term>função</term><idx><h>Função</h><h>definição de</h></idx>
+        <m>f \subset A \times B</m> de um conjunto  <m>A</m> para um conjunto <m>B</m>
+        como o tipo especial de relação onde para cada elemento <m>a \in A</m> 
+        há um único elemento <m>b \in B</m> tal que <m>(a, b) \in f</m>.
+        Outra forma de expressar isso é que para cada elemento em <m>A</m>,
+        <m>f</m> associa um único elemento em <m>B</m>.
+        Geralmente escrevemos <m>f:A \rightarrow B</m> ou <m>A \stackrel{f}{\rightarrow} B</m>.
+        No lugar de escrever os pares ordenados  <m>(a,b) \in A \times B</m>,
+        escrevemos <m>f(a) = b</m> or <m>f : a \mapsto b</m>.
+        O conjunto <m>A</m> é chamado de
+        <term>domínio</term><idx><h>Função</h><h>domínio de</h></idx> de <m>f</m> e
         <me permid="YsT">
           f(A) = \{ f(a) : a \in A \} \subset B
         </me>
-        is called the <term>range</term>
-            <idx><h>Function</h><h>range of</h></idx>
-        or <term>image</term> of <m>f</m>.
-        We can think of the elements in the function's domain as input values and the elements in the function's range as output values.
+        é chamado de <term>imagem</term>.
+            <idx><h>Função</h><h>imagem de</h></idx>
+        
+        Podemos imaginar os elementos do domínio da função como os valores de entrada
+        e os elementos da imagem da função como valores de saída.
       </p>
 
 
 
       <example xml:id="example-sets-mappings" permid="Ilt">
         <p permid="YzX">
-          Suppose <m>A = \{1, 2, 3 \}</m> and <m>B = \{a, b, c \}</m>.
-          In <xref ref="figure-sets-mappings"/> we define relations <m>f</m> and <m>g</m> from <m>A</m> to <m>B</m>.
-          The relation <m>f</m> is a mapping,
-          but <m>g</m> is not because <m>1 \in A</m> is not assigned to a unique element in <m>B</m>;
-          that is, <m>g(1) = a</m> and <m>g(1) = b</m>.
+          Tome <m>A = \{1, 2, 3 \}</m> and <m>B = \{a, b, c \}</m>.
+          Na <xref ref="figure-sets-mappings"/> definimos relações <m>f</m>
+          e <m>g</m> de <m>A</m> para <m>B</m>.
+          A relação <m>f</m> é uma função,
+          mas <m>g</m> não é função pois <m>1 \in A</m> não está associado a um único elemento em
+          <m>B</m>; usti pe, <m>g(1) = a</m> and <m>g(1) = b</m>.
         </p>
 
         <figure xml:id="figure-sets-mappings" permid="EHg">
           <caption>Mappings and relations</caption>
             <!-- Changed the figure to a tikz diagram - TWJ 5/4/2010 -->
           <image width="60%" xml:id="sets-mappings" permid="JTP">
-            <description>Two sets of ovals, A and B, relating 1, 2, 3 to a, b, c.  The first mapping, f, sends 1 to b and 2 and 3 to c.  The second relation, g, sends 1 to a and b, 2 to c, and 3 to a</description>
+            <description>Dois conjuntos, A e B, relacionando 1, 2, 3 a a, b, c.  O pimeiro mapa
+              , f, envia 1 para b e 2 e 3 para c.  A segunda relação, g, envia 1 para a e b, 2 para c, e 3 para a</description>
 
             <latex-image>
                 <xi:include href="tikz/sets-mappings.tex" parse="text"/>
@@ -712,67 +734,68 @@
       </example>
 
       <p permid="KKN">
-        Given a function <m>f : A \rightarrow B</m>,
-        it is often possible to write a list describing what the function does to each specific element in the domain.
-        However, not all functions can be described in this manner.
-        For example,
-        the function <m>f: {\mathbb R} \rightarrow {\mathbb R}</m> that sends each real number to its cube is a mapping that must be described by writing
+        Dada uma função <m>f : A \rightarrow B</m>,
+        ém geral é possível escrever uma lista descrevendo o que a função faz
+        para cada elemento específico no domínio. No entanto, nem todas as funções
+        podem ser escritas dessa forma. Por exemplo, a função
+        <m>f: {\mathbb R} \rightarrow {\mathbb R}</m> que associa a cada número
+        real o seu cubo é um mapa que deve ser descrito da forma
         <m>f(x) = x^3</m> or <m>f:x \mapsto x^3</m>.
       </p>
 
       <p permid="qRW">
-        Consider the relation <m>f : {\mathbb Q} \rightarrow {\mathbb Z}</m> given by <m>f(p/q) = p</m>.
-        We know that <m>1/2 = 2/4</m>,
-        but is <m>f(1/2) = 1</m> or <m>2</m>?
-        This relation cannot be a mapping because it is not well-defined.
-        A relation is <term>well-defined</term>
-            <idx><h>Well-defined map</h></idx>
-        if each element in the domain is assigned to a
-        <em>unique</em> element in the range.
+        Considere a relação <m>f : {\mathbb Q} \rightarrow {\mathbb Z}</m> dada por
+        <m>f(p/q) = p</m>. Sabemos que <m>1/2 = 2/4</m>,
+        mas <m>f(1/2) = 1</m> ou <m>2</m>?
+        Essa relação não pode ser uma função pois não é bem definida.
+        Uma relação é <term> bem definida </term> 
+        <idx><h>Função bem definida</h></idx>
+          <idx><h>Well-defined map</h></idx>
+        se cada elemento do domínio está associado a um <em>único</em> elemento
+        na imagem.
       </p>
 
       <p permid="WZf">
-        If <m>f:A \rightarrow B</m> is a map and the image of <m>f</m> is <m>B</m>,
-        i.e., <m>f(A) = B</m>, then <m>f</m> is said to be <term>onto</term>
-            <idx><h>Function</h><h>onto</h></idx>
-        or <term>surjective</term>.
-            <idx><h>Function</h><h>surjective</h></idx>
-        In other words,
-        if there exists an <m>a \in A</m> for each <m>b \in B</m> such that
-        <m>f(a) = b</m>, then <m>f</m> is onto.
-        A map is <term>one-to-one</term><idx><h>Function</h><h>one-to-one</h></idx> or
-        <term>injective</term><idx><h>Function</h><h>injective</h></idx> if
-        <m>a_1 \neq a_2</m> implies <m>f(a_1) \neq f(a_2)</m>.
-        Equivalently, a function is one-to-one if
-        <m>f(a_1) = f(a_2)</m> implies <m>a_1 = a_2</m>.
-        A map that is both one-to-one and onto is called <term>bijective</term>.
-            <idx><h>Function</h><h>bijective</h></idx>
+        Se <m>f:A \rightarrow B</m> é uma função e a imagem de <m>f</m> é <m>B</m>,
+        i.e., <m>f(A) = B</m>, então <m>f</m> é chamada de <term>sobrejetiva</term>
+            <idx><h>Função</h><h>sobrejetiva</h></idx>
+        Em outras palavras, se existe <m>a \in A</m> para cada <m>b \in B</m> tal que
+        <m>f(a) = b</m>, então <m>f</m> sobrejetiva.
+        Uma função é injetiva<idx><h>Função</h><h>injetiva</h></idx>
+        se <m>a_1 \neq a_2</m> implica <m>f(a_1) \neq f(a_2)</m>.
+        Equivalentemente, uma função é injetiva se 
+        <m>f(a_1) = f(a_2)</m> implica <m>a_1 = a_2</m>.
+        Uma função que é simultaneamente injetiva e sobrejetiva é chamada de
+        <term>bijetiva</term>.
+            <idx><h>Função</h><h>bijetiva</h></idx>
       </p>
             <!-- Added explanation for onto map - TWJ 1/25/2011 -->
       <example xml:id="example-sets-one-to-one-onto" permid="osC">
         <p permid="kOp">
-          Let <m>f:{\mathbb Z} \rightarrow {\mathbb Q}</m> be defined by <m>f(n) = n/1</m>.
-          Then <m>f</m> is one-to-one but not onto.
-          Define <m>g : {\mathbb Q} \rightarrow {\mathbb Z}</m> by
-          <m>g(p/q) = p</m> where <m>p/q</m> is a rational number expressed in its lowest terms with a positive denominator.
-          The function <m>g</m> is onto but not one-to-one.
+          Seja <m>f:{\mathbb Z} \rightarrow {\mathbb Q}</m> definida por <m>f(n) = n/1</m>.
+          Então <m>f</m> é injetiva mas não sobrejetiva.
+          Defina <m>g : {\mathbb Q} \rightarrow {\mathbb Z}</m> como
+          <m>g(p/q) = p</m> onde <m>p/q</m> é um número racional com representação
+          fracionária irredutível, com denominador positivo. A função <m>g</m>
+          é sobrejetiva mas não é injetiva.
         </p>
       </example>
 
       <p permid="Dgo">
-        Given two functions,
-        we can construct a new function by using the range of the first function as the domain of the second function.
-        Let <m>f : A \rightarrow B</m> and <m>g : B \rightarrow C</m> be mappings.
-        Define a new map,
-        the <term>composition</term><idx><h>Function</h><h>composition of</h></idx> of <m>f</m> and <m>g</m> from <m>A</m> to <m>C</m>,
-        by <m>(g \circ f)(x) = g(f(x))</m>.
+        Dadas duas funções, por vezes é possível construir uma nova função usando a imagem
+        da primeira função como o domínio da segunda função. 
+        Sejam <m>f : A \rightarrow B</m> e <m>g : B \rightarrow C</m> funções. 
+        Defina uma nova função,
+        a <term>composição</term><idx><h>Função</h><h>composição de</h></idx> de <m>f</m>
+        e <m>g</m> de <m>A</m> para <m>C</m>,por <m>(g \circ f)(x) = g(f(x))</m>.
       </p>
 
       <figure xml:id="figure-sets-composition" permid="PuG">
-        <caption>Composition of maps</caption>
+        <caption>Composição de funções</caption>
             <!-- Changed the figure to a tikz diagram - TWJ 5/4/2010 -->
         <image width="90%" xml:id="sets-composition" permid="qaY">
-          <description>Two sets of ovals, A and B, relating 1, 2, 3 to a, b, c and a, b, c to X, Y, Z.  The first mapping, f, sends 1 to b, 2  2 to c, and 3 to a.  The second relation, g, sends a and b to Z and c to X.  The bottom map, g circle f, sends 1 and 3 to Z and 2 to X. </description>
+          <description>Dois conjuntos, A and B, relacionando 1, 2, 3 para a, b, c e a, b, c para X, Y, Z.  O primeiro mapa, f, envia 1 para b, 2  para c, e 3 para a.  A segunda relação, g, envia
+          a e b para Z e c para X.  O mapa inferior, g composto com f, envia 1 e 3 para Z e 2 para X. </description>
             <latex-image>
                 <xi:include href="tikz/sets-composition.tex" parse="text"/>
             </latex-image>
@@ -782,41 +805,41 @@
 
       <example xml:id="example-sets-composition" permid="UzL">
         <p permid="QVy">
-          Consider the functions <m>f: A \rightarrow B</m> and
-          <m>g: B \rightarrow C</m> that are defined in <xref ref="figure-sets-composition"/>
-          (top).
-          The composition of these functions,
+          Considere as funções <m>f: A \rightarrow B</m> e
+          <m>g: B \rightarrow C</m> definidas n a<xref ref="figure-sets-composition"/>
+          (topo).
+          A composição dessas funções,
           <m>g \circ f: A \rightarrow C</m>,
-          is defined in <xref ref="figure-sets-composition"/>
+          está definida na <xref ref="figure-sets-composition"/>
           (bottom).
         </p>
       </example>
             <!-- Changed figure references.  Suggested by P. Diethelm.  TWJ 22/4/2013 -->
       <example xml:id="example-sets-composition-noncommute" permid="AGU">
         <p permid="xcH">
-          Let <m>f(x) = x^2</m> and <m>g(x) = 2x + 5</m>.
-          Then
+          Seja <m>f(x) = x^2</m> e <m>g(x) = 2x + 5</m>.
+          Então
           <me permid="EAc">
             (f \circ g)(x) = f(g(x)) = (2x + 5)^2 = 4x^2 + 20x + 25
           </me>
-          and
+          e
           <me permid="kHl">
             (g \circ f)(x) = g(f(x)) = 2x^2 + 5
           </me>.
-          In general, order makes a difference;
-          that is, in most cases <m>f \circ g \neq g \circ f</m>.
+          Em geral a ordem faz diferença; isto é, na maior parte dos casos, 
+          <m>f \circ g \neq g \circ f</m>.
         </p>
       </example>
 
       <example xml:id="example-sets-composition-commute" permid="MVm">
         <p permid="djQ">
-          Sometimes it is the case that <m>f \circ g= g \circ f</m>.
-          Let <m>f(x) = x^3</m> and <m>g(x) = \sqrt[3]{x}</m>.
-          Then
+          Certas vezes pode ocorrer <m>f \circ g= g \circ f</m>.
+          Se <m>f(x) = x^3</m> e <m>g(x) = \sqrt[3]{x}</m>.
+          Então
           <me permid="QOu">
             (f \circ g )(x) = f(g(x)) = f( \sqrt[3]{x}\, ) = (\sqrt[3]{x}\, )^3 = x
           </me>
-          and
+          e
           <me permid="wVD">
             (g \circ f )(x) = g(f(x)) = g( x^3) = \sqrt[3]{ x^3} = x
           </me>.
@@ -825,7 +848,7 @@
 
       <example xml:id="example-sets-linear-map" permid="tcv">
         <p permid="JqZ">
-          Given a <m>2 \times 2</m> matrix
+          Dada uma matrix <m>2 \times 2</m>
           <me permid="dcM">
             A =
             \begin{pmatrix}
@@ -833,12 +856,12 @@
             c &amp; d
             \end{pmatrix}
           </me>,
-          we can define a map <m>T_A : {\mathbb R}^2 \rightarrow {\mathbb R}^2</m> by
+          podemos definir um mapa <m>T_A : {\mathbb R}^2 \rightarrow {\mathbb R}^2</m> por
           <me permid="JjV">
             T_A (x,y) = (ax + by, cx +dy)
           </me>
-          for <m>(x,y)</m> in <m>{\mathbb R}^2</m>.
-          This is actually matrix multiplication; that is,
+          para <m>(x,y)</m> em <m>{\mathbb R}^2</m>.
+          Na verdade, isso é a multiplicação de matrizes. ou seja, 
           <me permid="pre">
             \begin{pmatrix}
             a &amp; b \\
@@ -853,22 +876,22 @@
             cx +dy
             \end{pmatrix}
           </me>.
-          Maps from <m>{\mathbb R}^n</m> to
-          <m>{\mathbb R}^m</m> given by matrices are called <term>linear maps</term>
-          or <term>linear transformations</term>.
-              <idx><h>Linear transformation</h><h>definition of</h></idx>
+          Mapas de <m>{\mathbb R}^n</m> para
+          <m>{\mathbb R}^m</m> dados por matrizes são chamados de <term>mapas lineares</term>
+          ou <term>transformações lineares</term>.
+              <idx><h>Transformação linear</h><h>definição de</h></idx>
         </p>
       </example>
 
       <example xml:id="example-sets-permutation" permid="ZjE">
         <p permid="pyi">
-          Suppose that <m>S = \{ 1,2,3  \}</m>.
-          Define a map <m>\pi :S\rightarrow S</m> by
+          Suponha que <m>S = \{ 1,2,3  \}</m>.
+          Defina uma função <m>\pi :S\rightarrow S</m> dada por
           <me permid="Vyn">
             \pi( 1 )  = 2, \qquad \pi( 2 )  = 1, \qquad \pi( 3 )  = 3
           </me>.
-          This is a bijective map.
-          An alternative way to  write <m>\pi</m> is
+          Essa é uma função bijetiva. Uma forma alternativa de
+          denotar <m>\pi</m> é
           <me permid="BFw">
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 \\
@@ -880,45 +903,45 @@
             2 &amp; 1 &amp; 3
             \end{pmatrix}
           </me>.
-          For any set <m>S</m>,
-          a one-to-one and onto mapping <m>\pi : S \rightarrow S</m> is called a
-          <term>permutation</term><idx><h>Permutation</h><h>definition of</h></idx> of <m>S</m>.
+          Para todo conjunto <m>S</m>, uma função injetiva e sobrejetiva
+          <m>\pi : S \rightarrow S</m> é chamada de 
+          <term>permutação</term><idx><h>Permutação</h><h>definição de</h></idx> de <m>S</m>.
         </p>
       </example>
 
       <theorem permid="PPS">
         <statement>
           <p permid="buD">
-            Let <m>f : A \rightarrow B</m>,
-            <m>g : B \rightarrow C</m>, and <m>h : C \rightarrow D</m>.
-            Then
+            Sejam <m>f : A \rightarrow B</m>,
+            <m>g : B \rightarrow C</m>, e <m>h : C \rightarrow D</m>.
+            Então
 
             <ol permid="bnm">
               <li permid="oly">
                 <p permid="yYY">
-                  The composition of mappings is associative;
-                  that is, <m>(h \circ g) \circ f = h \circ (g \circ f)</m>;
+                  A composição de funções é associativa; isto é,                   
+                  <m>(h \circ g) \circ f = h \circ (g \circ f)</m>;
                 </p>
               </li>
 
               <li permid="UsH">
                 <p permid="fgh">
-                  If <m>f</m> and <m>g</m> are both one-to-one,
-                  then the mapping <m>g \circ f</m> is one-to-one;
+                  Se <m>f</m> e <m>g</m> são ambas injetivas, então
+                   <m>g \circ f</m> é injetiva;
                 </p>
               </li>
 
               <li permid="AzQ">
                 <p permid="Lnq">
-                  If <m>f</m> and <m>g</m> are both onto,
-                  then the mapping <m>g \circ f</m> is onto;
+                  Se <m>f</m> e <m>g</m> são ambas sobrejetivas, então
+                  <m>g \circ f</m> é sobrejetiva;
                 </p>
               </li>
 
               <li permid="gGZ">
                 <p permid="ruz">
-                  If <m>f</m> and <m>g</m> are bijective,
-                  then so is <m>g \circ f</m>.
+                  Se <m>f</m> and <m>g</m> são bijetivas,
+                  então <m>g \circ f</m> também é bijetiva.
                 </p>
               </li>
             </ol>
@@ -927,17 +950,17 @@
 
         <proof permid="nXd">
           <p permid="epj">
-            We will prove (1) and (3).
-            Part (2) is left as an exercise.
-            Part (4) follows directly from (2) and (3).
+            Provamos (1) e (3).
+            Deixamos o item (2) como exercício e o item
+             (4) segue diretamente de (2) e (3).
           </p>
 
           <p permid="Kws">
-            (1) We must show that
+            (1) Devemos mostrar que
             <me permid="hMF">
               h \circ (g \circ f) = (h \circ g) \circ f
             </me>.
-            For <m>a \in A</m> we have
+            Para <m>a \in A</m> temos
             <md permid="NTO">
               <mrow>(h \circ (g \circ f))(a) &amp; = h((g \circ f)(a))</mrow>
               <mrow>&amp; = h(g(f(a)))</mrow>
@@ -947,13 +970,13 @@
           </p>
 
           <p permid="qDB">
-            (3) Assume that <m>f</m> and <m>g</m> are both onto functions.
-            Given <m>c \in C</m>,
-            we must show that there exists an <m>a \in A</m> such that <m>(g \circ f)(a) = g(f(a)) = c</m>.
-            However, since <m>g</m> is onto,
-            there is an element <m>b \in B</m> such that <m>g(b) = c</m>.
-            Similarly, there is an <m>a \in A</m> such that <m>f(a) = b</m>.
-            Accordingly,
+            (3) Assuma que <m>f</m> and <m>g</m> são ambas funções sobrejetivas.
+            Dado <m>c \in C</m>, devemos mostrar que existe um <m>a \in A</m> tal que
+            <m>(g \circ f)(a) = g(f(a)) = c</m>.
+            No entanto, como <m>g</m> is sobrejetiva,
+            existe um elemento <m>b \in B</m> tal que <m>g(b) = c</m>.
+            Similarmente, existe um <m>a \in A</m> tal que <m>f(a) = b</m>.
+            Portanto,
             <me permid="uaX">
               (g \circ f)(a) = g(f(a)) = g(b) = c
             </me>.
@@ -962,59 +985,60 @@
       </theorem>
 
       <p permid="jnx">
-        If <m>S</m> is any set, we will use <m>id_S</m> or <m>id</m> to denote the
-        <term>identity mapping</term>
-            <idx><h>Function</h><h>identity</h></idx>
-        from <m>S</m> to itself.
-        Define this map by <m>id(s) = s</m> for all <m>s \in S</m>.
-        A map <m>g: B \rightarrow A</m> is an
-        <term>inverse mapping</term>
-        of <m>f: A \rightarrow B</m> if
-        <m>g \circ f = id_A</m> and <m>f \circ g = id_B</m>;
-        in other words, the inverse function of a function simply
-        <q>undoes</q> the function.
-        A map is said to be <term>invertible</term><idx><h>Function</h><h>invertible</h></idx> if it has an inverse.
-        We usually write <m>f^{-1}</m> for the inverse of <m>f</m>.
+        Dado <m>S</m> um conjunto qualquer, usaremos <m>id_S</m> ou <m>id</m>
+        para denotar a
+        <term>função identidade</term>
+            <idx><h>Função</h><h>identidade</h></idx>
+        de <m>S</m> para si próprio. 
+        Definimos esse mapa por <m>id(s) = s</m> para todo <m>s \in S</m>.
+        Uma função <m>g: B \rightarrow A</m> é uma
+        <term>função inversa</term>
+        de <m>f: A \rightarrow B</m> se
+        <m>g \circ f = id_A</m> e <m>f \circ g = id_B</m>;
+        em outras palavras, a função inversa é a função que simplesmente
+        <q>desfaz</q> o que a função inicial.
+        Uma função é dita <term>invertível</term><idx><h>Função</h><h>invertível</h></idx>
+        se possui uma inversa. Denotamos <m>f^{-1}</m> para a função inversa de <m>f</m>.
 
         <notation>
           <usage>id</usage>
-          <description>identity mapping</description>
+          <description>função identidade</description>
         </notation>
 
         <notation>
           <usage>f^{-1}</usage>
-          <description>inverse of the function <m>f</m></description>
+          <description>invesa de uma função <m>f</m></description>
         </notation>
 
       </p>
 
       <example xml:id="example-sets-inverse-function" permid="FqN">
         <p permid="VFr">
-          The function <m>f(x) = x^3</m> has inverse
-          <m>f^{-1}(x) = \sqrt[3]{x}</m> by <xref ref="example-sets-composition-commute"/>.
+          A função <m>f(x) = x^3</m> tem como inversa
+          <m>f^{-1}(x) = \sqrt[3]{x}</m> por <xref ref="example-sets-composition-commute"/>.
         </p>
       </example>
 
       <example xml:id="example-sets-exponential" permid="lxW">
         <p permid="BMA">
-          The natural logarithm and the exponential functions,
-          <m>f(x) = \ln x</m> and <m>f^{-1}(x) = e^x</m>,
-          are inverses of each other provided that we are careful about choosing domains.
-          Observe that
+          O logaritmo natural e a função exponencial, 
+          <m>f(x) = \ln x</m> e <m>f^{-1}(x) = e^x</m>,
+          são mutuamente inversas desde que sejamos cuidados ao 
+          escolher os domínios. Observe que
           <me permid="aig">
             f(f^{-1}(x)) = f(e^x) = \ln e^x = x
           </me>
-          and
+          e
           <me permid="Gpp">
             f^{-1}(f(x)) = f^{-1}(\ln x) = e^{\ln x} = x
           </me>
-          whenever composition makes sense.
+          sempre que a composição faz sentido
         </p>
       </example>
 
       <example xml:id="example-sets-inverse-matrix" permid="RFf">
         <p permid="hTJ">
-          Suppose that
+          Suponha que
           <me permid="mwy">
             A =
             \begin{pmatrix}
@@ -1022,14 +1046,15 @@
             5 &amp; 2
             \end{pmatrix}
           </me>.
-          Then <m>A</m> defines a map from
-          <m>{\mathbb R}^2</m> to <m>{\mathbb R}^2</m> by
+          Então <m>A</m> define um mapa de
+          <m>{\mathbb R}^2</m> para <m>{\mathbb R}^2</m> dado por
           <me permid="SDH">
             T_A (x,y) = (3x +  y, 5x + 2y)
           </me>.
-          We can find an inverse map of <m>T_A</m> by simply inverting the matrix <m>A</m>;
-          that is, <m>T_A^{-1} = T_{A^{-1}}</m>.
-          In this example,
+          Podemos achar uma função inversa de <m>T_A</m> simplesmente
+          invertendo a matrix <m>A</m>;
+          ou seja, <m>T_A^{-1} = T_{A^{-1}}</m>.
+          Nesse exemplo,
           <me permid="yKQ">
             A^{-1} =
             \begin{pmatrix}
@@ -1037,20 +1062,19 @@
             -5 &amp;  3
             \end{pmatrix};
           </me>
-          hence, the inverse map is given by
+          assim a função inversa é dada por
           <me permid="eRZ">
             T_A^{-1} (x,y) = (2x -  y, -5x + 3y)
           </me>.
-          It is easy to check that
+          É fácil verificar que 
           <me permid="KZi">
             T^{-1}_A \circ T_A (x,y) = T_A \circ T_A^{-1} (x,y) = (x,y)
           </me>.
-          Not every map has an inverse.
-          If we consider the map
+          Nem toda função possui uma inversa. Se considerarmos o mapa
           <me permid="rgr">
             T_B (x,y) = (3x , 0 )
           </me>
-          given by the matrix
+          dado pela matriz
           <me permid="XnA">
             B =
             \begin{pmatrix}
@@ -1058,22 +1082,22 @@
             0 &amp; 0
             \end{pmatrix}
           </me>,
-          then an inverse map would have to be of the form
+          então uma função inversa deveria ter a forma
           <me permid="DuJ">
             T_B^{-1} (x,y) = (ax + by, cx +dy)
           </me>
-          and
+          e
           <me permid="jBS">
             (x,y) = T_B \circ T_B^{-1} (x,y) = (3ax + 3by, 0)
           </me>
-          for all <m>x</m> and <m>y</m>.
-          Clearly this is  impossible because <m>y</m> might not be <m>0</m>.
+          para qualquer <m>x</m> e <m>y</m>.
+          Isso é claramente impossível uma vez que pode não ser  <m>0</m>.
         </p>
       </example>
 
       <example xml:id="example-sets-inverse-permutation" permid="xMo">
         <p permid="OaS">
-          Given the permutation
+          Dada a permutação
           <me permid="PJb">
             \pi =
             \begin{pmatrix}
@@ -1081,7 +1105,7 @@
             2 &amp; 3 &amp; 1
             \end{pmatrix}
           </me>
-          on <m>S = \{ 1,2,3 \}</m>, it is easy to see that the permutation defined by
+          em <m>S = \{ 1,2,3 \}</m>, é fácil verificar que a permutação dada por
           <me permid="vQk">
             \pi^{-1} =
             \begin{pmatrix}
@@ -1089,154 +1113,154 @@
             3 &amp; 1 &amp; 2
             \end{pmatrix}
           </me>
-          is the inverse of <m>\pi</m>.
-          In fact, any bijective mapping possesses an inverse,
-          as we will see in the next theorem.
+          é a inversa de <m>\pi</m>.
+          Na verdade, toda função bijetiva possui uma inversa, como veremos
+          no teorema a seguir.
         </p>
       </example>
 
       <theorem permid="vXb">
         <statement>
           <p permid="HBM">
-            A mapping is invertible if and only if it is both one-to-one and onto.
+            Uma função é invertível se e somente se é injetiva e sobrejetiva.
           </p>
         </statement>
 
         <proof permid="Uem">
           <p permid="WKK">
-            Suppose first that <m>f:A \rightarrow B</m> is invertible with inverse <m>g: B \rightarrow A</m>.
-            Then <m>g \circ f = id_A</m> is the identity map;
-            that is, <m>g(f(a)) = a</m>.
-            If <m>a_1, a_2 \in A</m> with <m>f(a_1) = f(a_2)</m>,
-            then <m>a_1 = g(f(a_1)) = g(f(a_2)) = a_2</m>.
-            Consequently, <m>f</m> is one-to-one.
-            Now suppose that <m>b \in B</m>.
-            To show that <m>f</m> is onto,
-            it is necessary to find an <m>a \in A</m> such that <m>f(a) = b</m>,
-            but <m>f(g(b)) = b</m> with <m>g(b) \in A</m>.
-            Let <m>a = g(b)</m>.
+            Suponha inicialmente que <m>f:A \rightarrow B</m> é invertível com inversa
+            <m>g: B \rightarrow A</m>. Então <m>g \circ f = id_A</m> é a função identidade;
+            isto é, <m>g(f(a)) = a</m>.
+            Se <m>a_1, a_2 \in A</m> com <m>f(a_1) = f(a_2)</m>,
+            então <m>a_1 = g(f(a_1)) = g(f(a_2)) = a_2</m>.
+            Consequentemente, <m>f</m> é injetiva.
+            Suponha agora que <m>b \in B</m>.
+            Para verificar que <m>f</m> é sobrejetiva é
+            é necessário encontrar um elemento <m>a \in A</m> tal que <m>f(a) = b</m>,
+            mas <m>f(g(b)) = b</m> com <m>g(b) \in A</m>.
+            Basta portanto tomar <m>a = g(b)</m>.
           </p>
 
           <p permid="CRT">
-            Conversely, let <m>f</m> be bijective and let <m>b \in B</m>.
-            Since <m>f</m> is onto,
-            there exists an <m>a \in A</m> such that <m>f(a) = b</m>.
-            Because <m>f</m> is one-to-one, <m>a</m> must be unique.
-            Define <m>g</m> by letting <m>g(b) = a</m>.
-            We have now constructed the inverse of <m>f</m>.
+            Reciprocamente, seja <m>f</m> bijetiva e tome <m>b \in B</m>.
+            Como <m>f</m> é sobrejetiva, existe um <m>a \in A</m> tal que
+            <m>f(a) = b</m>. Uma vez que <m>f</m> é injetiva, <m>a</m> deve
+            ser único.Defina <m>g</m> tomando <m>g(b) = a</m>.
+            Construímos portanto a inversa de <m>f</m>.
           </p>
         </proof>
       </theorem>
     </subsection>
 
     <subsection xml:id="sets-subsection-equivalence-relations" permid="VFe">
-      <title>Equivalence Relations and Partitions</title>
+      <title>Relações de Equivalência e Partições</title>
       <p permid="vBP">
-        A fundamental notion in mathematics is that of equality.
-        We can generalize equality with equivalence relations and equivalence classes.
-        An <term>equivalence relation</term>
-            <idx><h>Equivalence relation</h></idx>
-        on a set <m>X</m> is a relation <m>R \subset X \times X</m> such that
+        Uma noção fundamental na matemática é a de igualdade. Podemos
+        generalizar a igualdade com relações de equivalência e classes de
+        equivalência. Uma
+        Uma <term>relação de equivalência</term>
+            <idx><h>Relação de Equivalência</h></idx>
+        em um conjunto <m>X</m> é uma relação <m>R \subset X \times X</m> tal que
 
         <ul permid="wVq">
           <li permid="yKD">
             <p permid="XBI">
-              <m>(x, x) \in R</m> for all <m>x \in X</m> (<term>reflexive property</term>);
+              <m>(x, x) \in R</m> para todo <m>x \in X</m> (<term>propriedade reflexiva</term>);
             </p>
           </li>
 
           <li permid="eRM">
             <p permid="DIR">
-              <m>(x, y) \in R</m> implies
-              <m>(y, x) \in R</m> (<term>symmetric property</term>);
+              <m>(x, y) \in R</m> implica
+              <m>(y, x) \in R</m> (<term>propriedade simétrica</term>);
             </p>
           </li>
 
           <li permid="KYV">
             <p permid="jQa">
-              <m>(x, y)</m> and <m>(y, z) \in R</m> imply <m>(x, z) \in R</m>
-              (<term>transitive property</term>).
+              <m>(x, y)</m> e <m>(y, z) \in R</m> implicam <m>(x, z) \in R</m>
+              (<term>propriedade transitiva</term>).
             </p>
           </li>
         </ul>
 
-        Given an equivalence relation <m>R</m> on a set <m>X</m>,
-        we usually write <m>x \sim y</m> instead of <m>(x, y) \in R</m>.
-        If the equivalence relation already has an associated notation such as <m>=</m>,
-        <m>\equiv</m>, or <m>\cong</m>,
-        we will use that notation.
+        Dada uma relação de equivalência <m>R</m> em um conjunto <m>X</m>,
+        escrevemos <m>x \sim y</m> no lugar de <m>(x, y) \in R</m>.
+        Se a relação de equivalência já possui uma notação associada, como
+        <m>=</m>, <m>\equiv</m> ou <m>\cong</m>, usaremos essa notação.
       </p>
 
       <example xml:id="example-sets-equivalent-fractions" permid="qhP">
         <p permid="uib">
-          Let <m>p</m>, <m>q</m>, <m>r</m>,
-          and <m>s</m> be integers, where <m>q</m> and <m>s</m> are nonzero.
-          Define <m>p/q \sim r/s</m> if <m>ps = qr</m>.
-          Clearly <m>\sim</m> is reflexive and symmetric.
-          To show that it is also transitive,
-          suppose that <m>p/q \sim r/s</m> and <m>r/s \sim t/u</m>,
-          with <m>q</m>,
-          <m>s</m>, and <m>u</m> all nonzero.
-          Then <m>ps = qr</m> and <m>ru = st</m>.
-          Therefore,
+          Seka, <m>p</m>, <m>q</m>, <m>r</m>,
+          e <m>s</m> inteiros, onde <m>q</m> e <m>s</m> são não nulos.
+          Defina <m>p/q \sim r/s</m> se <m>ps = qr</m>.
+          É fácil ver que <m>\sim</m> é reflexiva e simétrica.
+          Para verificar que essa relação é também transitiva suponha que
+          <m>p/q \sim r/s</m> e <m>r/s \sim t/u</m>,
+          com <m>q</m>, <m>s</m> e <m>u</m> não nulos.
+          Então <m>ps = qr</m> e <m>ru = st</m>.
+          Portanto,
           <me permid="bXt">
             psu = qru = qst
           </me>.
-          Since <m>s \neq 0</m>, <m>pu = qt</m>.
-          Consequently, <m>p/q \sim t/u</m>.
+          Como <m>s \neq 0</m>, <m>pu = qt</m>.
+          Consequentemente, <m>p/q \sim t/u</m>.
         </p>
       </example>
 
       <example xml:id="example-sets-equivalent-derivative" permid="WoY">
         <p permid="apk">
-          Suppose that <m>f</m> and <m>g</m> are differentiable functions on <m>{\mathbb R}</m>.
-          We can define an equivalence relation on such functions by letting
-          <m>f(x) \sim g(x)</m> if <m>f'(x) = g'(x)</m>.
-          It is clear that <m>\sim</m> is both reflexive and symmetric.
-          To demonstrate transitivity,
-          suppose that <m>f(x) \sim g(x)</m> and <m>g(x) \sim h(x)</m>.
-          From calculus we know that
-          <m>f(x) - g(x) = c_1</m> and <m>g(x)- h(x) = c_2</m>,
-          where <m>c_1</m> and <m>c_2</m> are both constants.
-          Hence,
+          Suponha que <m>f</m> e <m>g</m> sejam funções diferenciáveis em  <m>{\mathbb R}</m>.
+          Definimos uma relação de equivalência para tais funções tomando
+          <m>f(x) \sim g(x)</m> se <m>f'(x) = g'(x)</m>.
+          É claro que <m>\sim</m> é reflexiva e simétrica.
+          Para demonstrar a transitividade suponha que
+          <m>f(x) \sim g(x)</m> e <m>g(x) \sim h(x)</m>.
+          Do cálculo sabemos que
+          <m>f(x) - g(x) = c_1</m> e <m>g(x)- h(x) = c_2</m>,
+          onde <m>c_1</m> e <m>c_2</m> são ambos constantes.
+          Assim,
           <me permid="IeC">
             f(x) - h(x) = ( f(x) - g(x)) + ( g(x)- h(x)) = c_1 + c_2
           </me>
-          and <m>f'(x) - h'(x) = 0</m>.
-          Therefore, <m>f(x) \sim h(x)</m>.
+          e <m>f'(x) - h'(x) = 0</m>.
+          Portanto, <m>f(x) \sim h(x)</m>.
         </p>
       </example>
 
       <example xml:id="example-sets-equivalent-circles" permid="Cwh">
         <p permid="Gwt">
-          For <m>(x_1, y_1 )</m> and
-          <m>(x_2, y_2)</m> in <m>{\mathbb R}^2</m>,
-          define <m>(x_1, y_1 ) \sim (x_2, y_2)</m> if <m>x_1^2 + y_1^2 = x_2^2 + y_2^2</m>.
-          Then <m>\sim</m> is an equivalence relation on <m>{\mathbb R}^2</m>.
+          Para <m>(x_1, y_1 )</m> e
+          <m>(x_2, y_2)</m> e <m>{\mathbb R}^2</m>,
+          defina <m>(x_1, y_1 ) \sim (x_2, y_2)</m> se <m>x_1^2 + y_1^2 = x_2^2 + y_2^2</m>.
+          Então <m>\sim</m> é uma relação de equivalência em <m>{\mathbb R}^2</m>.
         </p>
       </example>
 
       <example xml:id="example-sets-equivalent-matrices" permid="iDq">
         <p permid="mDC">
-          Let <m>A</m> and <m>B</m> be
-          <m>2 \times 2</m> matrices with entries in the real numbers.
-          We can define an equivalence relation on the set of <m>2 \times 2</m> matrices,
-          by saying <m>A \sim B</m> if there exists an invertible matrix <m>P</m> such that <m>PAP^{-1} = B</m>.
-          For example, if
+          Sejam <m>A</m> e <m>B</m> matrizes 
+          <m>2 \times 2</m> com entradas nos reais.
+          Podemos definir uma relação de equivalência no conjunto
+          das matrizes <m>2 \times 2</m> 
+          considerando <m>A \sim B</m> se existe uma matriz invertível
+          <m>P</m> tal que <m>PAP^{-1} = B</m>.
+          Por exemplo, se
           <me permid="olL">
             A =
             \begin{pmatrix}
             1 &amp; 2 \\
             -1 &amp; 1
             \end{pmatrix}
-            \quad \text{and} \quad
+            \quad \text{e} \quad
             B =
             \begin{pmatrix}
             -18 &amp; 33 \\
             -11 &amp; 20
             \end{pmatrix}
           </me>,
-          then <m>A \sim B</m> since <m>PAP^{-1} = B</m> for
+          então <m>A \sim B</m> pois <m>PAP^{-1} = B</m> para
           <me permid="UsU">
             P =
             \begin{pmatrix}
@@ -1244,7 +1268,7 @@
             1 &amp; 3
             \end{pmatrix}
           </me>.
-          Let <m>I</m> be the <m>2 \times 2</m> identity matrix; that is,
+          Seja <m>I</m> a matriz identidade <m>2 \times 2</m>; ou seja,
           <me permid="AAd">
             I =
             \begin{pmatrix}
@@ -1252,81 +1276,89 @@
             0 &amp; 1
             \end{pmatrix}
           </me>.
-          Then <m>IAI^{-1} = IAI = A</m>;
-          therefore, the relation is reflexive.
-          To show symmetry, suppose that <m>A \sim B</m>.
-          Then there exists an invertible matrix <m>P</m> such that <m>PAP^{-1} = B</m>.
-          So
+          Então <m>IAI^{-1} = IAI = A</m>;
+          logo a relação é reflexiva.
+          Para verificar a simetria, suponha que <m>A \sim B</m>.
+          Então existe uma matriz invertível <m>P</m> tal que <m>PAP^{-1} = B</m>.
+          Assim
           <me permid="gHm">
             A = P^{-1} B P = P^{-1} B (P^{-1})^{-1}
           </me>.
-          Finally, suppose that <m>A \sim B</m> and <m>B \sim C</m>.
-          Then there exist invertible matrices <m>P</m> and <m>Q</m> such that
-          <m>PAP^{-1} = B</m> and  <m>QBQ^{-1} = C</m>.
-          Since
+          Finalmente, suponha que <m>A \sim B</m> e <m>B \sim C</m>.
+          Então existem matrizes invertíveis <m>P</m> e <m>Q</m> tais que
+          <m>PAP^{-1} = B</m> e <m>QBQ^{-1} = C</m>.
+          Como
           <me permid="MOv">
             C = QBQ^{-1} = QPAP^{-1} Q^{-1} = (QP)A(QP)^{-1}
           </me>,
-          the relation is transitive.
-          Two matrices that are equivalent in this manner are said to be <term>similar</term>.
-              <idx><h>Matrix</h><h>similar</h></idx>
+          a relação é transitiva.
+          Duas matrizes equivalentes dessa forma são ditas <term>similares</term>.
+              <idx><h>Matriz</h><h>similar</h></idx>
         </p>
       </example>
 
       <p permid="bIY">
-        A <term>partition</term>
-            <idx><h>Partitions</h></idx>
-        <m>{\mathcal P}</m> of a set <m>X</m> is a collection of nonempty sets
-        <m>X_1, X_2, \ldots</m> such that <m>X_i \cap X_j = \emptyset</m> for
-        <m>i \neq j</m> and <m>\bigcup_k X_k = X</m>.
-        Let <m>\sim</m> be an equivalence relation on a set <m>X</m> and let <m>x \in X</m>.
-        Then <m>[x] = \{ y \in X : y \sim x \}</m> is called the
-        <term>equivalence class</term>
-            <idx><h>Equivalence class</h></idx>
-        of <m>x</m>.
-        We will see that an equivalence relation gives rise to a partition via equivalence classes.
-        Also, whenever a partition of a set exists,
-        there is some natural underlying equivalence relation,
-        as the following theorem demonstrates.
+        Uma <term>partição</term>
+            <idx><h>Partições</h></idx>
+        <m>{\mathcal P}</m> de um conjunto <m>X</m> é uma coleção de conjuntos
+        não vazios <m>X_1, X_2, \ldots</m> tais que <m>X_i \cap X_j = \emptyset</m> para
+        <m>i \neq j</m> e <m>\bigcup_k X_k = X</m>.
+        Seja <m>\sim</m> uma relação de equivalência em um conjunto <m>X</m> e tome <m>x \in X</m>.
+        Então <m>[x] = \{ y \in X : y \sim x \}</m> é chamado de 
+        <term>classe de equivalência</term>
+            <idx><h>Classe de equivalência</h></idx>
+        de <m>x</m>, também encontramos a notação <m>\overline{x}</m> para a classe
+        de equivalência de <m>x</m>.
+        Veremos que uma relação de equivalência induz uma partição via suas
+        classes de equivalência. Ademais, sempre que uma partição em
+        um conjunto é dada, existe uma relação de equivalência subjacente
+        como o teorema a seguir demonstra.
       </p>
 
       <theorem permid="dTx">
         <statement>
           <p permid="nIV">
-            Given an equivalence relation <m>\sim</m> on a set <m>X</m>,
-            the equivalence classes of <m>X</m> form a partition of <m>X</m>.
-            Conversely, if <m>{\mathcal P} = \{ X_i\}</m> is a partition of a set <m>X</m>,
-            then there is an equivalence relation on <m>X</m> with equivalence classes <m>X_i</m>.
+            Dada uma relação de equivalência <m>\sim</m> em um conjunto <m>X</m>,
+            as classes de equivalência de <m>X</m> formam uma partição de <m>X</m>.
+            Reciprocamente, se <m>{\mathcal P} = \{ X_i\}</m> é uma partição
+            de um conjunto <m>X</m>, então existe uma relação de equivalência
+            em <m>X</m> com classes de equivalência <m>X_i</m>.
           </p>
         </statement>
 
         <proof permid="Alv">
           <p permid="iZc">
-            Suppose there exists an equivalence relation <m>\sim</m> on the set <m>X</m>.
-            For any <m>x \in X</m>, the reflexive property shows that
-            <m>x \in [x]</m> and so <m>[x]</m> is nonempty.
-            Clearly <m>X = \bigcup_{x \in X} [x]</m>.
-            Now let <m>x, y \in X</m>.
-            We need to show that either
-            <m>[x] = [y]</m> or <m>[x] \cap [y] = \emptyset</m>.
-            Suppose that the intersection of <m>[x]</m> and <m>[y]</m> is not empty and that <m>z \in [x] \cap [y]</m>.
-            Then <m>z \sim x</m> and <m>z \sim y</m>.
-            By symmetry and transitivity <m>x \sim y</m>;
-            hence, <m>[x] \subset [y]</m>.
-            Similarly, <m>[y] \subset [x]</m> and so <m>[x] = [y]</m>.
-            Therefore, any two equivalence classes are either disjoint or exactly the same.
+            Suponha que uma relação de equivalência <m>\sim</m> no conjunto <m>X</m>.
+            Para qualquer <m>x \in X</m>, a propriedade reflexiva mostra que
+            <m>x \in [x]</m> portanto <m>[x]</m> é não vazio.
+            Claramente temos <m>X = \bigcup_{x \in X} [x]</m>.
+            Considere agora <m>x, y \in X</m>. Precisamos
+            mostrar que ou <m>[x] = [y]</m> ou <m>[x] \cap [y] = \emptyset</m>.
+            Suponha que a interseção entre <m>[x]</m> e <m>[y]</m>
+            não seja vazia e tome <m>z \in [x] \cap [y]</m>.
+            Então <m>z \sim x</m> e <m>z \sim y</m>.
+            Por simetria e transitividade <m>x \sim y</m>;
+            portanto, <m>[x] \subset [y]</m>.
+            De forma similar, <m>[y] \subset [x]</m> e portanto <m>[x] = [y]</m>.
+            Assim, duas classes de equivalência são disjuntas ou
+            exatamente iguais.
           </p>
 
           <p permid="Pgl">
-            Conversely, suppose that <m>{\mathcal P} = \{X_i\}</m> is a partition of a set <m>X</m>.
-            Let two elements be equivalent if they are in the same partition.
-            Clearly, the relation is reflexive.
-            If <m>x</m> is in the same partition as <m>y</m>,
-            then <m>y</m> is in the same partition as <m>x</m>,
-            so <m>x \sim y</m> implies <m>y \sim x</m>.
-            Finally, if <m>x</m> is in the same partition as <m>y</m> and <m>y</m> is in the same partition as <m>z</m>,
-            then <m>x</m> must be in the same partition as <m>z</m>,
-            and transitivity holds.
+            Reciprocamente, suponha que <m>{\mathcal P} = \{X_i\}</m>
+            é uma partição de um conjunto <m>X</m>.
+            Considere dois elementos equivalentes se eles pertencem 
+            a mesma partição.
+            Claramente, a relação é reflexiva.
+            Se <m>x</m> pertence ao mesmo subconjunto de <m>y</m>,
+            digamos  <m>X_i</m>, então obviamente <m>y</m> também
+            pertence ao mesmo subconjunto <m>X_i</m> de <m>x</m>.
+            Finalmente, se <m>x</m> está no mesmo subconjunto <m>X_i</m> de
+            <m>y</m> e <m>y</m> está no mesmo subconjunto <m>X_j</m> de
+            <m>z</m>, sendo as partições disjuntas ou iguais, temos
+            que <m>X_i = X_j</m>, logo <m>x</m> e <m>z</m>
+            estão no mesmo subconjunto e, portanto, a transitividade
+            vale.
           </p>
         </proof>
       </theorem>
@@ -1334,90 +1366,100 @@
       <corollary permid="KaG">
         <statement>
           <p permid="zXn">
-            Two equivalence classes of an equivalence relation are either disjoint or equal.
+            Duas classes de equivalência de uma relação de equivalência
+            são ou disjuntas ou iguais.
           </p>
         </statement>
       </corollary>
 
       <p permid="HQh">
-        Let us examine some of the partitions given by the equivalence classes in the last set of examples.
+        Examinemos algumas das partições dadas pelas relações de equivalência no
+        último conjunto de exemplos.
       </p>
 
       <example xml:id="example-sets-fraction-partition" permid="OKz">
         <p permid="SKL">
-          In the equivalence relation in <xref ref="example-sets-equivalent-fractions"/>,
-          two pairs of integers, <m>(p,q)</m> and <m>(r,s)</m>,
-          are in the same equivalence class when they reduce to the same fraction in its lowest terms.
+          Na relação de equivalência em <xref ref="example-sets-equivalent-fractions"/>,
+          dois pares de inteiros, <m>(p,q)</m> and <m>(r,s)</m>,
+          estão na mesma classe de equivalência quando eles
+          representam a mesma fração.
         </p>
       </example>
 
       <example xml:id="example-sets-matrix-partition" permid="uRI">
         <p permid="yRU">
-          In the equivalence relation in <xref ref="example-sets-equivalent-derivative"/>,
-          two functions <m>f(x)</m> and <m>g(x)</m> are in the same partition when they differ by a constant.
+          Na relação de equivalência em  <xref ref="example-sets-equivalent-derivative"/>,
+          duas funções <m>f(x)</m> e <m>g(x)</m> 
+          estão na mesma classe de equivalência quando diferem por uma constante.
         </p>
       </example>
 
       <example xml:id="example-sets-circle-partition" permid="aYR">
         <p permid="eZd">
-          We defined an equivalence class on <m>{\mathbb R}^2</m> by
-          <m>(x_1, y_1 ) \sim (x_2, y_2)</m> if <m>x_1^2 + y_1^2 = x_2^2 + y_2^2</m>.
-          Two pairs of real numbers are in the same partition when they lie on the same circle about the origin.
+          Definimos uma relação de equivalência em <m>{\mathbb R}^2</m> como
+          <m>(x_1, y_1 ) \sim (x_2, y_2)</m> se <m>x_1^2 + y_1^2 = x_2^2 + y_2^2</m>.
+          Dois pares de números reais estão no mesmo subconjunto da partição 
+          quando eles pertencem ao mesmo círculo centrado na origem.
         </p>
       </example>
 
       <example xml:id="example-sets-congruent-integers" permid="Hga">
         <p permid="Lgm">
-          Let <m>r</m> and <m>s</m> be two integers and suppose that <m>n \in {\mathbb N}</m>.
-          We say that <m>r</m> is <term>congruent</term><idx><h>Congruence modulo <m>n</m></h></idx> to <m>s</m>
-          <term>modulo</term> <m>n</m>,
-          or <m>r</m> is congruent to <m>s</m> mod <m>n</m>,
-          if <m>r - s</m> is evenly divisible by <m>n</m>;
-          that is, <m>r - s = nk</m>  for some <m>k \in {\mathbb Z}</m>.
-          In this case we write <m>r \equiv s \pmod{n}</m>.
+          Sejam <m>r</m> e <m>s</m> inteiros e suponha que  <m>n \in {\mathbb N}</m>.
+          Dizemos que <m>r</m> é <term>congruente</term><idx><h>Congruencia módulo <m>n</m></h></idx>
+          a <m>s</m>  <term>módulo</term> <m>n</m>,
+          ou <m>r</m> é congruente a  <m>s</m> mod <m>n</m>,
+          se <m>r - s</m> divisível por <m>n</m>;
+          isto é, <m>r - s = nk</m> para algum <m>k \in {\mathbb Z}</m>.
+          nesse caso escrevemos <m>r \equiv s \pmod{n}</m>.
 
           <notation>
             <usage>a \equiv b \pmod{n}</usage>
-            <description><m>a</m> is congruent to <m>b</m> modulo <m>n</m></description>
+            <description><m>a</m> é congruente a <m>b</m> módulo <m>n</m></description>
           </notation>
 
-          For example, <m>41 \equiv 17 \pmod{ 8}</m> since
-          <m>41 - 17=24</m> is divisible by <m>8</m>.
-          We claim that congruence modulo <m>n</m> forms an equivalence relation of <m>{\mathbb Z}</m>.
-          Certainly any integer <m>r</m> is equivalent to itself since
-          <m>r - r = 0</m> is divisible by <m>n</m>.
-          We will now show that the relation is symmetric.
-          If <m>r \equiv s \pmod{ n}</m>,
-          then <m>r - s = -(s -r)</m> is divisible by <m>n</m>.
-          So <m>s - r</m> is divisible by <m>n</m> and <m>s \equiv r \pmod{ n}</m>.
-          Now suppose that <m>r \equiv s \pmod{ n}</m> and <m>s \equiv t \pmod{ n}</m>.
-          Then there exist integers <m>k</m> and <m>l</m> such that
-          <m>r -s = kn</m> and <m>s - t = ln</m>.
-          To show transitivity,
-          it is necessary to prove that <m>r - t</m> is divisible by <m>n</m>.
-          However,
+          Por exemplo, <m>41 \equiv 17 \pmod{ 8}</m> pois
+          <m>41 - 17=24</m> é divisível por <m>8</m>.
+          Afirmamos que a congruência módulo <m>n</m>
+          define uma relação de equivalência para <m>{\mathbb Z}</m>.
+          Certamente todo inteiro <m>r</m> é equivalente a si mesmo uma vez que
+          <m>r - r = 0</m> é divisível por <m>n</m>.
+          Mostremos que essa relação é simétrica.
+          Se <m>r \equiv s \pmod{ n}</m>,
+          então <m>r - s = -(s -r)</m> é divisível por <m>n</m>.
+          Assim <m>s - r</m> é divisível por <m>n</m> e <m>s \equiv r \pmod{ n}</m>.
+          Agora suponha que <m>r \equiv s \pmod{ n}</m> e <m>s \equiv t \pmod{ n}</m>.
+          Então existem inteiros <m>k</m> e <m>l</m> tais que
+          <m>r -s = kn</m> e <m>s - t = ln</m>.
+          Para mostrar a transitividade é necessário verificar que
+          <m>r - t</m> é divisível por <m>n</m>.
+          De fato,
           <me permid="sVE">
             r - t = r - s + s - t = kn + ln = (k + l)n
           </me>,
-          and so <m>r - t</m> is divisible by <m>n</m>.
+          portanto <m>r - t</m> é divisível por <m>n</m>.
         </p>
 
         <p permid="rnv">
-          If we consider the equivalence relation established by the integers modulo <m>3</m>, then
+          Se considerarmos a relação de equivalência dada pelos módulo <m>3</m>, então
           <md permid="ZcN">
             <mrow>{[0]} &amp; = \{ \ldots, -3, 0, 3, 6, \ldots \},</mrow>
             <mrow>{[1]} &amp; = \{ \ldots, -2, 1, 4, 7, \ldots \},</mrow>
             <mrow>{[2]} &amp; = \{ \ldots, -1, 2, 5, 8, \ldots \}</mrow>
           </md>.
-          Notice that <m>[0] \cup [1] \cup [2] = {\mathbb Z}</m> and also that the sets are disjoint.
-          The sets <m>[0]</m>, <m>[1]</m>,
-          and <m>[2]</m> form a partition of the integers.
+          Observe que <m>[0] \cup [1] \cup [2] = {\mathbb Z}</m> e que tais
+          conjuntos são disjuntos.
+          Os conjuntos <m>[0]</m>, <m>[1]</m>,
+          e <m>[2]</m> definem uma partição dos inteiros.
         </p>
 
         <p permid="XuE">
-          The integers modulo <m>n</m> are a very important example in the study of abstract algebra and will become quite useful in our investigation of various algebraic structures such as groups and rings.
-          In our discussion of the integers modulo <m>n</m> we have actually assumed a result known as the division algorithm,
-          which will be stated and proved in <xref ref="integers"/>.
+          Os inteiros módulo <m>n</m> formam um importante exemplo 
+          no estudo de álgebra abstrata e se mostrará bastante útil na
+          nossa exploração das diversas estruturas algébricas, como grupos e aneis.
+          Em nossa discussão sobre os inteiros módulo <m>n</m>
+          assumimos um resultado conhecido como algoritmo da divisão, esse
+          resultado será enunciado e provado em <xref ref="integers"/>.
         </p>
       </example>
     </subsection>
@@ -1429,7 +1471,7 @@
     <exercise permid="Kix">
       <statement>
         <p permid="OSq">
-          What do relations and mappings have in common?
+          O que relações e funções tem em comum?
         </p>
       </statement>
     </exercise>
@@ -1437,7 +1479,7 @@
     <exercise permid="qpG">
       <statement>
         <p permid="uZz">
-          What makes relations and mappings different?
+          O que diferencia relações e funções?
         </p>
       </statement>
     </exercise>
@@ -1445,9 +1487,9 @@
     <exercise permid="WwP">
       <statement>
         <p permid="bgI">
-          State carefully the three defining properties of an equivalence relation.
-          In other words, do not just <em>name</em>
-          the properties, give their definitions.
+          Enuncie cuidadosamente as três propriedades que definem uma relação
+          de equivalência. Em outras palavras, não apenas as nomeie, 
+          e sim apresente as respectivas definições.
         </p>
       </statement>
     </exercise>
@@ -1455,6 +1497,7 @@
     <exercise permid="CDY">
       <statement>
         <p permid="HnR">
+          Qual é a importância das relações de equivalências? (Dica: Partições)
           What is the big deal about equivalence relations? (Hint: Partitions.)
         </p>
       </statement>
@@ -1463,7 +1506,8 @@
     <exercise permid="iLh">
       <statement>
         <p permid="nva">
-          Describe a general technique for proving that two sets are equal.
+          Descreva uma técanica geral para provar que dois conjuntos
+          são iguais.
         </p>
       </statement>
     </exercise>
@@ -1473,17 +1517,17 @@
     <!-- File: sets.xml  -->
     <!-- Title: Preliminaries -->
   <exercises xml:id="exercises-sets" filenamebase="sets" permid="mDp">
-    <title>Exercises</title>
+    <title>Exercícios</title>
     <exercise number="1" permid="nnj" xml:id="sets-exercise-set-operations">
       <statement>
         <p permid="AHh">
-          Suppose that
+          Suponha que
           <md permid="FjW">
-            <mrow>A &amp; = \{ x : x \in \mathbb N \text{ and } x \text{ is even} \},</mrow>
-            <mrow>B &amp; = \{x : x \in \mathbb N \text{ and } x \text{ is prime}\},</mrow>
-            <mrow>C &amp; = \{ x : x \in \mathbb N \text{ and } x \text{ is a multiple of } 5\}</mrow>
+            <mrow>A &amp; = \{ x : x \in \mathbb N \text{ e } x \text{ é par} \},</mrow>
+            <mrow>B &amp; = \{x : x \in \mathbb N \text{ e } x \text{ é primo}\},</mrow>
+            <mrow>C &amp; = \{ x : x \in \mathbb N \text{ e } x \text{ é um múltiplo de  } 5\}</mrow>
           </md>.
-          Describe each of the following sets.
+          Descreva os conjuntos a seguir.
 
           <ol cols="2" permid="TIN">
             <li permid="MOi">
@@ -1522,9 +1566,9 @@
     <exercise number="2" permid="Tus" xml:id="sets-exercise-set-operations-empty-set">
       <statement>
         <p permid="gOq">
-          If <m>A = \{ a, b, c \}</m>,
-          <m>B = \{ 1, 2, 3 \}</m>, <m>C = \{ x \}</m>, and <m>D = \emptyset</m>,
-          list all of the elements in each of the following sets.
+          Se <m>A = \{ a, b, c \}</m>,
+          <m>B = \{ 1, 2, 3 \}</m>, <m>C = \{ x \}</m>, e <m>D = \emptyset</m>,
+          liste todos os elementos em cada um dos conjuntos.
 
           <ol cols="2" permid="zPW">
             <li permid="JTC">
@@ -1563,7 +1607,8 @@
     <exercise number="3" permid="zBB" xml:id="sets-exercise-cartesian-product-nonempty-set">
       <statement>
         <p permid="MVz">
-          Find an example of two nonempty sets <m>A</m> and <m>B</m> for which <m>A \times B = B \times A</m> is true.
+          Encontre um exemplo de dois conjuntos não vazios <m>A</m> e <m>B</m> para os quais
+           <m>A \times B = B \times A</m> é verdadeiro.
         </p>
       </statement>
     </exercise>
@@ -1571,7 +1616,7 @@
     <exercise number="4" permid="fIK" xml:id="sets-exercise-union-intersect-empty-set">
       <statement>
         <p permid="tcI">
-          Prove <m>A \cup \emptyset = A</m> and <m>A \cap \emptyset = \emptyset</m>.
+          Prove que <m>A \cup \emptyset = A</m> e <m>A \cap \emptyset = \emptyset</m>.
         </p>
       </statement>
     </exercise>
@@ -1579,7 +1624,7 @@
     <exercise number="5" permid="LPT" xml:id="sets-exercise-union-intersection-commute">
       <statement>
         <p permid="ZjR">
-          Prove <m>A \cup B = B \cup A</m> and <m>A \cap B = B \cap A</m>.
+          Prove que <m>A \cup B = B \cup A</m> e <m>A \cap B = B \cap A</m>.
         </p>
       </statement>
     </exercise>
@@ -1587,15 +1632,15 @@
     <exercise number="6" permid="rXc" xml:id="sets-exercise-union-distributes">
       <statement>
         <p permid="Fra">
-          Prove <m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>.
+          Prove que <m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>.
         </p>
       </statement>
       <hint permid="JFh">
         <p permid="DXm">
-           Observe that <m>x \in A \cup B</m> if and only if <m>x \in A</m> or <m>x \in B</m>.
-          Equivalently, <m>x \in B</m> or <m>x \in A</m>,
-          which is the same as <m>x \in B \cup A</m>.
-          Therefore, <m>A \cup B = B \cup A</m>.
+          Observe que <m>x \in A \cup B</m> se e somente se <m>x \in A</m> ou <m>x \in B</m>.
+          Equivalentemente, <m>x \in B</m> ou <m>x \in A</m>,
+          o que é o mesmo que <m>x \in B \cup A</m>.
+          Portanto, <m>A \cup B = B \cup A</m>.
         </p>
       </hint>
     </exercise>
@@ -1603,7 +1648,7 @@
     <exercise number="7" permid="Yel" xml:id="sets-exercise-intersection-distributes">
       <statement>
         <p permid="lyj">
-          Prove <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>.
+          Prove que <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>.
         </p>
       </statement>
     </exercise>
@@ -1611,7 +1656,7 @@
     <exercise number="8" permid="Elu" xml:id="sets-exercise-subset-iff-intersection">
       <statement>
         <p permid="RFs">
-          Prove <m>A \subset B</m> if and only if <m>A \cap B = A</m>.
+          Prove que <m>A \subset B</m> se e somente se <m>A \cap B = A</m>.
         </p>
       </statement>
     </exercise>
@@ -1619,7 +1664,7 @@
     <exercise number="9" permid="ksD" xml:id="sets-exercise-demorgan">
       <statement>
         <p permid="xMB">
-          Prove <m>(A \cap B)' = A' \cup B'</m>.
+          Prove que <m>(A \cap B)' = A' \cup B'</m>.
         </p>
       </statement>
     </exercise>
@@ -1627,7 +1672,7 @@
     <exercise number="10" permid="QzM" xml:id="sets-exercise-set-minus-union">
       <statement>
         <p permid="dTK">
-          Prove <m>A \cup B = (A \cap B) \cup (A \setminus B) \cup (B \setminus A)</m>.
+          Prove que <m>A \cup B = (A \cap B) \cup (A \setminus B) \cup (B \setminus A)</m>.
         </p>
       </statement>
       <hint permid="Opa">
@@ -1640,7 +1685,7 @@
     <exercise number="11" permid="wGV" xml:id="sets-exercise-times-union">
       <statement>
         <p permid="KaT">
-          Prove <m>(A \cup B) \times C = (A \times C ) \cup (B \times C)</m>.
+          Prove que <m>(A \cup B) \times C = (A \times C ) \cup (B \times C)</m>.
         </p>
       </statement>
     </exercise>
@@ -1648,7 +1693,7 @@
     <exercise number="12" permid="cOe" xml:id="sets-exercise-set-minus-empty-set">
       <statement>
         <p permid="qic">
-          Prove <m>(A \cap B) \setminus B = \emptyset</m>.
+          Prove que <m>(A \cap B) \setminus B = \emptyset</m>.
         </p>
       </statement>
     </exercise>
@@ -1656,7 +1701,7 @@
     <exercise number="13" permid="IVn" xml:id="sets-exercise-union-set-minus">
       <statement>
         <p permid="Wpl">
-          Prove <m>(A \cup B) \setminus B = A \setminus B</m>.
+          Prove que <m>(A \cup B) \setminus B = A \setminus B</m>.
         </p>
       </statement>
     </exercise>
@@ -1664,7 +1709,7 @@
     <exercise number="14" permid="pcw" xml:id="sets-exercise-set-minus-distribute">
       <statement>
         <p permid="Cwu">
-          Prove <m>A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)</m>.
+          Prove que <m>A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)</m>.
         </p>
       </statement>
       <hint permid="SYT">
@@ -1677,7 +1722,7 @@
     <exercise number="15" permid="VjF" xml:id="sets-exercise-a-cap-b-setminus-c">
       <statement>
         <p permid="iDD">
-          Prove <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
+          Prove que <m>A \cap (B \setminus C) = (A \cap B) \setminus (A \cap C)</m>.
         </p>
       </statement>
     </exercise>
@@ -1685,7 +1730,7 @@
     <exercise number="16" permid="BqO" xml:id="sets-exercise-a-csetminus-b-cup-b-setminus-a">
       <statement>
         <p permid="OKM">
-          Prove <m>(A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)</m>.
+          Prove que <m>(A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)</m>.
         </p>
       </statement>
     </exercise>
@@ -1693,9 +1738,10 @@
     <exercise number="17" permid="hxX" xml:id="sets-exercise-which-are-maps">
       <statement>
         <p permid="uRV">
-          Which of the following relations <m>f: {\mathbb Q} \rightarrow {\mathbb Q}</m> define a mapping?
-          In each case,
-          supply a reason why <m>f</m> is or is not a mapping.
+          Qual das relações <m>f: {\mathbb Q} \rightarrow {\mathbb Q}</m> a seguir
+          define uma função?
+          Em cada caso, forneça uma razão pela qual <m>f</m>
+          é ou não uma função.
 
           <ol cols="2" permid="fXf">
             <li permid="GYW">
@@ -1726,8 +1772,8 @@
       </statement>
       <hint permid="rBD">
         <p permid="wsN">
-          (a) Not a map since <m>f(2/3)</m> is undefined; (b) this is a map; (c) not a map,
-          since <m>f(1/2) = 3/4</m> but <m>f(2/4)=3/8</m>; (d) this is a map.
+          (a) Não é uma função pois <m>f(2/3)</m> não está definida; (b) é função; (c) não
+          é função, uma vez que <m>f(1/2) = 3/4</m> mas <m>f(2/4)=3/8</m>; (d) é função.
         </p>
       </hint>
     </exercise>
@@ -1735,31 +1781,31 @@
     <exercise number="18" permid="NFg" xml:id="sets-exercise-which-are-one-to-one-onto">
       <statement>
         <p permid="aZe">
-          Determine which of the following functions are one-to-one and which are onto.
-          If the function is not onto, determine its range.
+          Determine quais das funções a seguir são injetivas e quais são sobrejetivas.
+          Se a função não for sobrejetiva determine sua imagem.
 
           <ol permid="Meo">
             <li permid="fBG">
               <p permid="iKH">
-                <m>f: {\mathbb R} \rightarrow {\mathbb R}</m> defined by <m>f(x) = e^x</m>
+                <m>f: {\mathbb R} \rightarrow {\mathbb R}</m> definida por <m>f(x) = e^x</m>
               </p>
             </li>
 
             <li permid="LIP">
               <p permid="ORQ">
-                <m>f: {\mathbb Z} \rightarrow {\mathbb Z}</m> defined by <m>f(n) = n^2 + 3</m>
+                <m>f: {\mathbb Z} \rightarrow {\mathbb Z}</m> definida por <m>f(n) = n^2 + 3</m>
               </p>
             </li>
 
             <li permid="rPY">
               <p permid="uYZ">
-                <m>f: {\mathbb R} \rightarrow {\mathbb R}</m> defined by <m>f(x) = \sin x</m>
+                <m>f: {\mathbb R} \rightarrow {\mathbb R}</m> definida por<m>f(x) = \sin x</m>
               </p>
             </li>
 
             <li permid="XXh">
               <p permid="bgi">
-                <m>f: {\mathbb Z} \rightarrow {\mathbb Z}</m> defined by <m>f(x) = x^2</m>
+                <m>f: {\mathbb Z} \rightarrow {\mathbb Z}</m> definida por <m>f(x) = x^2</m>
               </p>
             </li>
           </ol>
@@ -1767,8 +1813,9 @@
       </statement>
       <hint permid="DPV">
         <p permid="czW">
-          (a) <m>f</m> is one-to-one but not onto.
-          <m>f({\mathbb R} ) = \{ x \in {\mathbb R} : x \gt 0 \}</m>. (c) <m>f</m> is neither one-to-one nor onto. <m>f(\mathbb R) = \{ x : -1 \leq x \leq 1 \}</m>.
+          (a) <m>f</m> é injetiva mas não sobrejetiva.
+          <m>f({\mathbb R} ) = \{ x \in {\mathbb R} : x \gt 0 \}</m>. (c) <m>f</m> 
+          não é injetiva nem sobrejetiva. <m>f(\mathbb R) = \{ x : -1 \leq x \leq 1 \}</m>.
         </p>
       </hint>
     </exercise>
@@ -1776,10 +1823,10 @@
     <exercise number="19" permid="tMp" xml:id="sets-exercise-inverse-composition">
       <statement>
         <p permid="Hgn">
-          Let <m>f :A \rightarrow B</m> and
-          <m>g : B \rightarrow C</m> be invertible mappings;
-          that is, mappings such that <m>f^{-1}</m> and <m>g^{-1}</m> exist.
-          Show that <m>(g \circ f)^{-1} =f^{-1} \circ g^{-1}</m>.
+          Sejam <m>f :A \rightarrow B</m> and
+          <m>g : B \rightarrow C</m> funções invertíveis;
+          ou seja, funções para as quais <m>f^{-1}</m> e <m>g^{-1}</m> existem.
+          Mostre que <m>(g \circ f)^{-1} =f^{-1} \circ g^{-1}</m>.
         </p>
       </statement>
     </exercise>
@@ -1790,13 +1837,15 @@
           <ol permid="slx">
             <li permid="Eeq">
               <p permid="Hnr">
-                Define a function <m>f: {\mathbb N} \rightarrow {\mathbb N}</m> that is one-to-one but not onto.
+                Defina uma função <m>f: {\mathbb N} \rightarrow {\mathbb N}</m>
+                que é injetiva mas não sobrejetiva.
               </p>
             </li>
 
             <li permid="klz">
               <p permid="nuA">
-                Define a function <m>f: {\mathbb N} \rightarrow {\mathbb N}</m> that is onto but not one-to-one.
+                Defina uma função <m>f: {\mathbb N} \rightarrow {\mathbb N}</m>
+                que é sobrejetiva mas não injetiva.
               </p>
             </li>
           </ol>
@@ -1812,9 +1861,9 @@
     <exercise number="21" permid="GaH" xml:id="sets-exercise-relation-on-circles">
       <statement>
         <p permid="TuF">
-          Prove the relation defined on
-          <m>{\mathbb R}^2</m> by <m>(x_1, y_1 ) \sim (x_2, y_2)</m> if
-          <m>x_1^2 + y_1^2 = x_2^2 + y_2^2</m> is an equivalence relation.
+          Prove que a relação definida em 
+          <m>{\mathbb R}^2</m> por <m>(x_1, y_1 ) \sim (x_2, y_2)</m> se
+          <m>x_1^2 + y_1^2 = x_2^2 + y_2^2</m> é uma relação de equivalência.
         </p>
       </statement>
     </exercise>
@@ -1822,40 +1871,40 @@
     <exercise number="22" permid="mhQ" xml:id="sets-exercise-bijective-surjective-compostion">
       <statement>
         <p permid="zBO">
-          Let <m>f : A \rightarrow B</m> and <m>g : B \rightarrow C</m> be maps.
+          Sejam <m>f : A \rightarrow B</m> e <m>g : B \rightarrow C</m> funções.
 
           <ol permid="YsG">
             <li permid="QsI">
               <p permid="TBJ">
-                If <m>f</m> and <m>g</m> are both one-to-one functions,
-                show that <m>g \circ f</m> is one-to-one.
+                Se <m>f</m> e <m>g</m> são injetivas, 
+                mostre que <m>g \circ f</m> é injetiva.
               </p>
             </li>
 
             <li permid="wzR">
               <p permid="zIS">
-                If <m>g \circ f</m> is onto, show that <m>g</m> is onto.
+                Se <m>g \circ f</m> é sbrejetiva, mostre que <m>g</m> é sobrejetiva.
               </p>
             </li>
 
             <li permid="cHa">
               <p permid="fQb">
-                If <m>g \circ f</m> is one-to-one,
-                show that <m>f</m> is one-to-one.
+                Se <m>g \circ f</m> é injetiva,
+                mostre que <m>f</m> é injetiva.
               </p>
             </li>
 
             <li permid="IOj">
               <p permid="LXk">
-                If <m>g \circ f</m> is one-to-one and <m>f</m> is onto,
-                show that <m>g</m> is one-to-one.
+                Se <m>g \circ f</m> é injetiva e <m>f</m> é sobrejetiva,
+                mostre que <m>g</m> é injetiva.
               </p>
             </li>
 
             <li permid="oVs">
               <p permid="set">
-                If <m>g \circ f</m> is onto and <m>g</m> is one-to-one,
-                show that <m>f</m> is onto.
+                Se <m>g \circ f</m> é sobrejetiva e <m>g</m> é injetiva,
+                mostre que <m>f</m> é sobrejetiva.
               </p>
             </li>
           </ol>
@@ -1863,12 +1912,12 @@
       </statement>
       <hint permid="oGX">
         <p permid="oOo">
-          (a) Let <m>x, y \in A</m>.
-          Then <m>g(f(x)) = (g \circ f)(x) = (g \circ f)(y) = g(f(y))</m>.
-          Thus, <m>f(x) = f(y)</m> and <m>x = y</m>,
-          so <m>g \circ f</m> is one-to-one. (b) Let <m>c \in C</m>,
-          then <m>c = (g \circ f)(x) = g(f(x))</m> for some <m>x \in A</m>.
-          Since <m>f(x) \in B</m>, <m>g</m> is onto.
+          (a) Sejam <m>x, y \in A</m>.
+          Então <m>g(f(x)) = (g \circ f)(x) = (g \circ f)(y) = g(f(y))</m>.
+          logo, <m>f(x) = f(y)</m> e <m>x = y</m>,
+          assim, <m>g \circ f</m> é injetiva. (b) Seja <m>c \in C</m>,
+          então <m>c = (g \circ f)(x) = g(f(x))</m> par algum <m>x \in A</m>.
+          Como <m>f(x) \in B</m>, concluímos que <m>g</m> é sobrejetiva.
         </p>
       </hint>
     </exercise>
@@ -1876,13 +1925,13 @@
     <exercise number="23" permid="SoZ"  xml:id="sets-exercise-inverse-rational-function">
       <statement>
         <p permid="fIX">
-          Define a function on the real numbers by
+          Defina uma função nos números reais por
           <me permid="Ryo">
             f(x) = \frac{x + 1}{x - 1}
           </me>.
-          What are the domain and range of <m>f</m>?
-          What is the inverse of <m>f</m>?
-          Compute <m>f \circ f^{-1}</m> and <m>f^{-1} \circ f</m>.
+          Qual é o domínio e a imagem de <m>f</m>?
+          Qual é a inversa de <m>f</m>?
+          Calcule <m>f \circ f^{-1}</m> e <m>f^{-1} \circ f</m>.
         </p>
       </statement>
       <hint permid="AVp">
@@ -1895,26 +1944,26 @@
     <exercise number="24" permid="ywi" xml:id="sets-exercise-maps-set-operations">
       <statement>
         <p permid="LQg">
-          Let <m>f: X \rightarrow Y</m> be a map with
-          <m>A_1, A_2 \subset X</m> and <m>B_1, B_2 \subset Y</m>.
+          Sejam <m>f: X \rightarrow Y</m> uma função e
+          <m>A_1, A_2 \subset X</m> e <m>B_1, B_2 \subset Y</m>.
 
           <ol permid="EzP">
             <li permid="ZMu">
               <p permid="cVv">
-                Prove <m>f( A_1 \cup A_2 ) = f( A_1) \cup f( A_2 )</m>.
+                Prove qie <m>f( A_1 \cup A_2 ) = f( A_1) \cup f( A_2 )</m>.
               </p>
             </li>
 
             <li permid="FTD">
               <p permid="JcE">
-                Prove <m>f( A_1 \cap A_2 ) \subset f( A_1) \cap f( A_2 )</m>.
-                Give an example in which equality fails.
+                Prove que <m>f( A_1 \cap A_2 ) \subset f( A_1) \cap f( A_2 )</m>.
+                Exiba um exemplo onde a igualdade falha.
               </p>
             </li>
 
             <li permid="maM">
               <p permid="pjN">
-                Prove <m>f^{-1}( B_1 \cup B_2 ) = f^{-1}( B_1) \cup f^{-1}(B_2 )</m>, where
+                Prove que <m>f^{-1}( B_1 \cup B_2 ) = f^{-1}( B_1) \cup f^{-1}(B_2 )</m>, onde
                 <me permid="xFx">
                   f^{-1}(B) = \{ x \in X : f(x) \in B \}
                 </me>.
@@ -1923,13 +1972,13 @@
 
             <li permid="ShV">
               <p permid="VqW">
-                Prove <m>f^{-1}( B_1 \cap B_2 ) = f^{-1}( B_1) \cap f^{-1}( B_2 )</m>.
+                Prove que <m>f^{-1}( B_1 \cap B_2 ) = f^{-1}( B_1) \cap f^{-1}( B_2 )</m>.
               </p>
             </li>
 
             <li permid="ype">
               <p permid="Byf">
-                Prove <m>f^{-1}( Y \setminus B_1 ) = X \setminus f^{-1}( B_1)</m>.
+                Prove que <m>f^{-1}( Y \setminus B_1 ) = X \setminus f^{-1}( B_1)</m>.
               </p>
             </li>
           </ol>
@@ -1937,18 +1986,18 @@
       </statement>
       <hint permid="NjH">
         <p permid="BcG">
-          (a) Let <m>y \in f(A_1 \cup A_2)</m>.
-          Then there exists an <m>x \in A_1 \cup A_2</m> such that <m>f(x) = y</m>.
-          Hence, <m> y \in f(A_1)</m> or <m>f(A_2) </m>.
-          Therefore, <m> y \in f(A_1) \cup f(A_2)</m>.
-          Consequently,
+          (a) Seja <m>y \in f(A_1 \cup A_2)</m>.
+          Então existe um <m>x \in A_1 \cup A_2</m> tal que <m>f(x) = y</m>.
+          Assim, <m> y \in f(A_1)</m> or <m>f(A_2) </m>.
+          Portanto, <m> y \in f(A_1) \cup f(A_2)</m>.
+          Consequentemente,
           <m> f(A_1 \cup A_2) \subset f(A_1) \cup f(A_2)</m>.
-          Conversely, if <m>y \in f(A_1) \cup f(A_2)</m>,
-          then <m> y \in f(A_1)</m> or <m>f(A_2)</m>.
-          Hence, there exists an <m>x</m> in <m>A_1</m> or <m>A_2</m> such that <m>f(x) = y</m>.
-          Thus, there exists an <m>x \in A_1 \cup A_2</m> such that <m>f(x) = y</m>.
-          Therefore, <m> f(A_1) \cup f(A_2) \subset f(A_1 \cup A_2)</m>,
-          and <m>f(A_1 \cup A_2) = f(A_1) \cup f(A_2)</m>.
+          Reciprocamente, se <m>y \in f(A_1) \cup f(A_2)</m>,
+          então <m> y \in f(A_1)</m> ou <m>f(A_2)</m>.
+          Assim, existe um <m>x</m> em <m>A_1</m> ou <m>A_2</m> tal que <m>f(x) = y</m>.
+          Logo, existe um <m>x \in A_1 \cup A_2</m> tal que <m>f(x) = y</m>.
+          Portanto, <m> f(A_1) \cup f(A_2) \subset f(A_1 \cup A_2)</m>,
+          e <m>f(A_1 \cup A_2) = f(A_1) \cup f(A_2)</m>.
         </p>
       </hint>
     </exercise>
@@ -1956,34 +2005,33 @@
     <exercise number="25" permid="eDr" xml:id="sets-exercise-determine-equivalence-relations">
       <statement>
         <p permid="rXp">
-          Determine whether or not the following relations are equivalence relations on the given set.
-          If the relation is an equivalence relation,
-          describe the partition given by it.
-          If the relation is not an equivalence relation,
-          state why it fails to be one.
+          Determine se as relações a seguir são relações de equivalência
+          nos conjuntos dados.
+          Caso afirmativo, descreva a partição induzida. Caso negativo
+          mostre o motivo pelo qual a relação não é de equivalência.
 
           <ol cols="2" permid="kGY">
             <li permid="jgg">
               <p permid="mph">
-                <m>x \sim y</m> in <m>{\mathbb R}</m> if <m>x \geq y</m>
+                <m>x \sim y</m> in <m>{\mathbb R}</m> se <m>x \geq y</m>
               </p>
             </li>
 
             <li permid="Pnp">
               <p permid="Swq">
-                <m>m \sim n</m> in <m>{\mathbb Z}</m> if <m>mn &gt; 0</m>
+                <m>m \sim n</m> in <m>{\mathbb Z}</m> se <m>mn &gt; 0</m>
               </p>
             </li>
 
             <li permid="vuy">
               <p permid="yDz">
-                <m>x \sim y</m> in <m>{\mathbb R}</m> if <m>|x - y| \leq 4</m>
+                <m>x \sim y</m> in <m>{\mathbb R}</m> se <m>|x - y| \leq 4</m>
               </p>
             </li>
 
             <li permid="bBH">
               <p permid="eKI">
-                <m>m \sim n</m> in <m>{\mathbb Z}</m> if <m>m \equiv n \pmod{6}</m>
+                <m>m \sim n</m> in <m>{\mathbb Z}</m> se <m>m \equiv n \pmod{6}</m>
               </p>
             </li>
           </ol>
@@ -1991,8 +2039,8 @@
       </statement>
       <hint permid="ZxZ">
         <p permid="hjP">
-          (a) The relation fails to be symmetric. (b) The relation is not reflexive,
-          since <m>0</m> is not equivalent to itself. (c) The relation is not transitive.
+          (a) A relação falha em ser simétrica. (b) A relação não é reflexiva
+          pois <m>0</m> não é equivalente a si mesmo. (c) A relação não é transitiva.
         </p>
       </hint>
     </exercise>
@@ -2000,9 +2048,9 @@
     <exercise number="26" permid="KKA" xml:id="sets-exercise-nonsymmetric-circle">
       <statement>
         <p permid="Yey">
-          Define a relation <m>\sim</m> on <m>{\mathbb R}^2</m> by stating that
-          <m>(a, b) \sim (c, d)</m> if and only if <m>a^2 + b^2 \leq c^2 + d^2</m>.
-          Show that <m>\sim</m> is reflexive and transitive but not symmetric.
+          Defina uma relação <m>\sim</m> em <m>{\mathbb R}^2</m> considerando
+          <m>(a, b) \sim (c, d)</m> se e somente <m>a^2 + b^2 \leq c^2 + d^2</m>.
+          Mostre que <m>\sim</m> é reflexiva e transitiva mas não é simétrica.
         </p>
       </statement>
     </exercise>
@@ -2010,8 +2058,8 @@
     <exercise number="27" permid="qRJ" xml:id="sets-exercise-matrix-mult-well-defined">
       <statement>
         <p permid="ElH">
-          Show that an <m>m \times n</m> matrix gives rise to a well-defined map from
-          <m>{\mathbb R}^n</m> to <m>{\mathbb R}^m</m>.
+          Mostre que uma matrix <m>m \times n</m> induz uma função bem definida de
+          <m>{\mathbb R}^n</m> em <m>{\mathbb R}^m</m>.
         </p>
       </statement>
     </exercise>
@@ -2019,32 +2067,34 @@
     <exercise number="28" permid="WYS" xml:id="sets-exercise-reflexive-error">
       <statement>
         <p permid="ksQ">
-          Find the error in the following argument by providing a counterexample.
-          <q>The reflexive property is redundant in the axioms for an equivalence relation.
-          If <m>x \sim y</m>, then <m>y \sim x</m> by the symmetric property.
-          Using the transitive property,
-          we can deduce that <m>x \sim x</m>.</q>
+          Encontre o erro no seguinte argumento exibindo um contra-exemplo.
+          
+          <q>A propriedade reflexiva é redundante nos axiomas
+            de relação de equivalência.
+          Se <m>x \sim y</m>, então <m>y \sim x</m> pela propriedade de simetria.
+          Usando a transitividade podemos deduzir que <m>x \sim x</m>.</q>
         </p>
       </statement>
       <hint permid="yaJ">
         <p permid="NqY">
-          Let <m>X = {\mathbb N} \cup \{ \sqrt{2}\, \}</m> and define
-          <m>x \sim y</m> if <m>x + y \in {\mathbb N}</m>.
+          Seja <m>X = {\mathbb N} \cup \{ \sqrt{2}\, \}</m> e defina
+          <m>x \sim y</m> se <m>x + y \in {\mathbb N}</m>.
         </p>
       </hint>
     </exercise>
 
     <exercise number="29" permid="Dgb" xml:id="sets-exercise-projective-real-line">
-      <title>Projective Real Line</title>
+      <title>Reta Projetiva Real</title>
       <statement>
         <p permid="QzZ">
-          Define a relation on <m>{\mathbb R}^2 \setminus \{ (0,0) \}</m> by letting
-          <m>(x_1, y_1) \sim (x_2, y_2)</m> if there exists a nonzero real number <m>\lambda</m> such that <m>(x_1, y_1) = ( \lambda x_2, \lambda y_2)</m>.
-          Prove that <m>\sim</m> defines an equivalence relation on <m>{\mathbb R}^2 \setminus (0,0)</m>.
-          What are the corresponding equivalence classes?
-          This equivalence relation defines the projective line,
-          denoted by <m>{\mathbb P}({\mathbb R}) </m>,
-          which is very important in geometry.
+          Defina uma relação de equivalência em <m>{\mathbb R}^2 \setminus \{ (0,0) \}</m>
+          tomando <m>(x_1, y_1) \sim (x_2, y_2)</m> se existe um número
+          real não nulo <m>\lambda</m> tal que <m>(x_1, y_1) = ( \lambda x_2, \lambda y_2)</m>.
+          Prove que <m>\sim</m> define uma relação de equivalência em 
+          <m>{\mathbb R}^2 \setminus (0,0)</m>. Quais são as classes de equivalência
+          correspondentes?
+          Essa relação de equivalência define a reta projetiva, denotada por
+          <m>{\mathbb P}({\mathbb R}) </m>, que é muito importante na geometria.
         </p>
       </statement>
     </exercise>
@@ -2053,9 +2103,9 @@
   <!--Todo Figure out how to include comments in front of the list of references-->
 
   <references xml:id="sets-references" permid="ztb">
-    <title>References and Suggested Readings</title>
+    <title>Referências e Leituras Sugeridas</title>
         <!--
-		<p>The following list contains references suitable for further reading.  With the exception of [8] and [9] and perhaps [1] and [3], all of these books are more or less  at the same level as this text.  Interesting applications of algebra  can be found in [2], [5], [10], and [11].</p>
+    <p>The following list contains references suitable for further reading.  With the exception of [8] and [9] and perhaps [1] and [3], all of these books are more or less  at the same level as this text.  Interesting applications of algebra  can be found in [2], [5], [10], and [11].</p>
 -->
     <biblio type="raw" permid="fAk">
 <!-- was [1] --><!-- Reference updated 5/4/2010 - TWJ -->
@@ -2161,80 +2211,88 @@
     <title>Sage</title>
     <introduction permid="bIL">
       <p permid="osP">
-        Sage is a powerful system for studying and exploring many different areas of mathematics.
-        In this textbook, you will study a variety of algebraic structures,
-        such as groups, rings and fields.
-        Sage does an excellent job of implementing many features of these objects as we will see in the chapters ahead.
-        But here and now, in this initial chapter,
-        we will concentrate on a few general ways of getting the most out of working with Sage.
+        Sage é um poderoso sistema para o estudo e a exploração de
+        diferentes áreas de matemática. Nesse livro, você vai estudar
+        uma variedade de estruturas algébricas, como grupos, aneis e corpos. Sage
+        faz um ótimo trabalho na implementação de vários aspectos desses
+        objetos como veremos nos capítulo a seguir. Mas aqui e agora, nesse capítulo
+        inicial, nos concentraremos em algumas formas de explorar ao 
+        máximo o uso do Sage.
       </p>
 
       <p permid="UzY">
-        You may use Sage several different ways.
-        It may be used as a command-line program when installed on your own computer.
-        Or it might be a web application such as the SageMathCloud.
-        Our writing will assume that you are reading this as a worksheet within the Sage Notebook (a web browser interface),
-        or this is a section of the entire book presented as web pages,
-        and you are employing the Sage Cell Server via those pages.
-        After the first few chapters the explanations should work equally well for whatever vehicle you use to execute Sage commands.
+        Você pode usar o Sage de diversas formas. Ele pode ser usado na
+        linha de comando, quando instalado no seu computador. Também
+        pode ser usado como uma aplicação web como o SageMathCloud.
+        Assumiremos aqui que você está lendo esse texto como uma
+        worksheet dentro de um Notebook Sage (uma interface em um
+        navegador web), ou que essa é uma seção do livro apresentada
+        através de páginas web, e você usara o Sage Cell Server através dessas
+        páginas. Após os primeiros capítulos, as explicações devem funcionar
+        igualmente bem independente do meio que você esteja utilizando 
+        para executar os comandos Sage.
       </p>
     </introduction>
 
     <subsection permid="BMn">
-      <title>Executing Sage Commands</title>
+      <title>Executando Comandos Sage</title>
       <p permid="nXq">
-        Most of your interaction will be by typing commands into a <em>compute cell</em>.
-        If you are reading this in the Sage Notebook or as a webpage version of the book,
-        then you will see a compute cell just below this paragraph.
-        Click once inside the compute cell and if you are in the Sage Notebook,
-        you will get a more distinctive border around it,
-        a blinking cursor inside, plus a cute little
-        <q>evaluate</q> link below.
+        A maior parte das interações acontecerão através de comandos
+        em uma <em>célula de cálculo</em>.
+        Se você está lendo isso em um Notebook Sage ou em uma versão
+        web do livro, então você deverá uma célula de cálculo logo abaixo
+        desse parágrafo. Clique uma vez dentro da céclula de cálculo e,
+        se você estiver no Notebook Sage, você deve notar uma borda
+        mais distintiva ao redor dela, um cursor piscando, além de um
+        um pequeno e charmoso botão <q>evaluate</q> logo abaixo.
       </p>
 
       <sage/>
 
       <p permid="Uez">
-        At the cursor,
-        type <c>2+2</c> and then click on the evaluate link.
-        Did a <c>4</c> appear below the cell?
-        If so, you have successfully sent a command off for Sage to evaluate and you have received back the (correct) answer.
+        No cursor, digite <c>2+2</c> e clique no botão evaluate.
+        Um  <c>4</c> apareceu abaixo da célula?
+        Se sim, você conseguiu enviar um comando para o Sage calcular e 
+        recebeu de volta a resposta (correta).
       </p>
 
       <p permid="AlI">
-        Here is another compute cell.
-        Try evaluating the command <c>factorial(300)</c> here.
+        Aqui está uma outra célula de cálculo.
+        Tenta executar o comando <c>factorial(300)</c> aqui.
       </p>
 
       <sage/>
 
       <p permid="gsR">
         Hmmmmm.
-        That is quite a big integer!
-        If you see slashes at the end of each line,
-        this means the result is continued onto the next line,
-        since there are 615 total digits in the result.
+        Isso é um inteiro realmente grande. Se você notar barras
+        no final de cada linha, isso significa que o resultado continua
+        na linha seguinte, como há 615 dígitos no resultado.
       </p>
 
       <p permid="MAa">
-        To make new compute cells in the Sage Notebook (only),
-        hover your mouse just above another compute cell,
-        or just below some output from a compute cell.
-        When you see a skinny blue bar across the width of your worksheet,
-        click and you will open up a new compute cell, ready for input.
-        Note that your worksheet will remember any calculations you make,
-        in the order you make them, no matter where you put the cells,
-        so it is best to stay organized and add new cells at the bottom.
+        Para criar novas células de cálculo no Sage Notebook (apenas nele)
+        passe com o mouse acima de uma outra célula, ou abaixo do resultado
+        de uma célula. Quando você notar uma fina barra azul ao longo
+        do comprimento do seu worksheet, clique nela e outra célula
+        de cálculo será aberta, pronta para a entrada de comandos.
+        Observe que o worksheet lembrará todos os cálculos que você
+        faz, na ordem que você os faz, não importa onde você posicione as
+        células, assim é importante se manter organizado e adicionar
+        novas células na parte inferior.
       </p>
 
       <p permid="sHj">
-        Try placing your cursor just below the monstrous value of <m>300!</m> that you have.
-        Click on the blue bar and try another factorial computation in the new compute cell.
+        Tente colocar o seu cursos logo abaixo do mostruoso valor de
+        <m>300!</m> que você obteve.
+        Clique na barra azul e tente outro cálculo de fatorial na nova
+        célula de cálculo.
       </p>
 
       <p permid="YOs">
-        Each compute cell will show output due to only the very last command in the cell.
-        Try to predict the following output before evaluating the cell.
+        Cada célula de cálculo exibirá apenas o resultado do último
+        comando na célula. Tente prever a saída dos seguintes comandos
+        antes de executar a célula.
       </p>
             <!-- Doctest framework *will* create output from "b", contrary to notebook behavior -->
             <!-- So doctest will fail, and doctest="not tested" does not help the situation -->
@@ -2250,14 +2308,15 @@
             </sage>
 
       <p permid="EVB">
-        The following compute cell will not print anything since the one command does not create output.
-        But it will have an effect,
-        as you can see when you execute the subsequent cell.
-        Notice how this uses the value of <c>b</c> from above.
-        Execute this compute cell <em>once</em>.
-        Exactly once.
-        Even if it <em>appears</em> to do nothing.
-        If you execute the cell twice,
+        A célula de cálculo a seguir não irá exibir nada uma vez que o único
+        comando presente não cria uma saída. No entanto ela
+        terá um efeito, como você verá ao executar a célula subsequente.
+        Note como isso utiliza o valor de <c>b</c> acima.
+        Execute essa célula de cálculo <em>uma vez</em>.
+        Exatamente uma única vez.
+        Ainda que ela  <em>aparente</em> não fazer nada.
+        Se você executar duas vezes, seu cartão de credito
+        será cobrado duas vezes.
         your credit card may be charged twice.
       </p>
 
@@ -2266,7 +2325,7 @@
             </sage>
 
       <p permid="lcK">
-        Now execute this cell, which will produce some output.
+        Agora execute essa célula, que produziá alguma saída.
       </p>
 
             <sage permid="oWs">
@@ -2275,22 +2334,22 @@
             </sage>
 
       <p permid="RjT">
-        So <c>b</c> came into existence as <c>6</c>.
-        We subtracted <m>10</m> immediately afterward.
-        Then a subsequent cell added <c>50</c>.
-        This assumes you executed this cell <em>exactly</em> once!
-        In the last cell we create <c>b+20</c>
-        (but do not save it)
-        and it is this value (<m>66</m>) that is output,
-        while <c>b</c> is still <m>46</m>.
+        Então <c>b</c> começou a existir como <c>6</c>.
+        Subtraimos <m>10</m> imediatamente depois.
+        Em seguida, uma célula subsequente adicionou <c>50</c>.
+        Assumindo que você executou essa célula <em>exatamente</em> uma
+        vez! Na última célula criamos <c>b+20</c>
+        (mas não o salvamos)
+        e é esse valor (<m>66</m>) que é a saída,
+        enquanto <c>b</c> ainda é <m>46</m>.
       </p>
 
       <p permid="xrc">
-        You can combine several commands on one line with a semi-colon.
-        This is a great way to get multiple outputs from a compute cell.
-        The syntax for building a matrix should be somewhat obvious when you see the output,
-        but if not,
-        it is not particularly important to understand now.
+        Você pode combinar diversos comando em uma linha com uma 
+        semi-vírgula. Essa é uma ótima forma de exibir diversas
+        saídas de uma célula de cálculo. A sintaxe para a construção
+        de uma matrix deve ser clara quando você ver a
+        saída, mas, se não form, não é muito importante entende-la agora.
       </p>
 
             <sage permid="VdB">
@@ -2313,23 +2372,22 @@
     </subsection>
 
     <subsection permid="hTw">
-      <title>Immediate Help</title>
+      <title>Ajuda Imediata</title>
       <p permid="dyl">
-        Some commands in Sage are <q>functions,</q>
-        an example is <c>factorial()</c> above.
-        Other commands are <q>methods</q>
-        of an object and are like characteristics of objects,
-        an example is <c>.inverse()</c> as a method of a matrix.
-        Once you know how to create an object
-        (such as a matrix),
-        then it is easy to see all the available methods.
-        Write the name of the object,
-        place a period (<q>dot</q>) and hit the TAB key.
-        If you have <c>A</c> defined from above,
+        Alguns comandos em Sage são <q>funções,</q> um
+        exemplo é o <c>factorial()</c> acima.
+        Outros comandos são <q>métodos</q>
+        de um objeto e funcionam como características de
+        objetos, um exemplo é o <c>.inverse()</c> como
+        um método de uma matriz. Uma vez que você sabe criar um
+        objeto (como uma matriz), então é fácil consultar todos
+        os métodos disponíveis. Escreva o nome do objeto,
+        em seguida coloque um ponto e aperte a tecla TAB.
+        Se você definiu <c>A</c> como acima, então a célula
+        de cálculo a seguir está pronta para ser utilizada, clique
+        nela e aperte TAB (Não <q>evaluate</q>!)
         then the compute cell below is ready to go,
-        click into it and then hit TAB
-        (not <q>evaluate</q>!).
-        You should get a long list of possible methods.
+        Você deve obter uma longa lista com os métodos possíveis.
       </p>
 
             <sage doctest="not tested" permid="Efq">
@@ -2337,12 +2395,10 @@
             </sage>
 
       <p permid="JFu">
-        To get some help on how to use a method with an object,
-        write its name after a dot
-        (with no parentheses)
-        and then use a question-mark and hit TAB. (Hit the escape key
-        <q>ESC</q> to remove the list,
-        or click on the text for a method.)
+        Para obter ajuda na utilização de um método de algum objeto, escreva
+        o nome do método após o ponto (sem parênteses), digite um
+        ponto de interrogação e aperta TAB (Aperte ESC para remover a lista
+        ou clique no texto para algum método)
       </p>
 
             <sage doctest="not tested" permid="kmz">
@@ -2350,8 +2406,10 @@
             </sage>
 
       <p permid="pMD">
-        With one more question-mark and a TAB you can see the actual computer instructions that were programmed into Sage to make the method work,
-        once you scoll down past the documentation delimited by the triple quotes (<c>"""</c>):
+        Com mais um ponto de interrogação você pode visualizar até
+        mesmo as instruções que foram programadas no Sage para que
+        o método funcione, basta mover a tela para baixo, ápós
+        a documentação limitada por aspas triplas (<c>"""</c>):
       </p>
 
             <sage doctest="not tested" permid="QtI">
@@ -2359,13 +2417,13 @@
             </sage>
 
       <p permid="VTM">
-        It is worthwhile to see what Sage does when there is an error.
-        You will probably see a lot of these at first,
-        and initially they will be a bit intimidating.
-        But with time,
-        you will learn how to use them effectively and you will also become more proficient with Sage and see them less often.
-        Execute the compute cell below,
-        it asks for the inverse of a matrix that has no inverse.
+        É válido apresentar o que o Sage faz quando há algum erro.
+        Você provavelmente verá muitos desse no início e, à primeira
+        vista eles parecem intimidadores. Mas, com o tempo, você 
+        aprender a utilizá-los efetivamente, e também
+        vai se tornar mais experiente com o Sage e se depara
+        com eles cada vez menos. Execute a céluila abaixo, ela pede
+        a inversa de uma matrix que não possui inversa. Então releia o comentário·
         Then reread the commentary.
       </p>
 
@@ -2382,277 +2440,289 @@
             </sage>
 
       <p permid="CaV">
-        Click just to the left of the error message to expand it fully
-        (another click hides it totally,
-        and a third click brings back the abbreviated form).
-        Read the bottom of an error message first,
-        it is your best explanation.
-        Here a <c>ZeroDivisionError</c> is not 100% accurate,
-        but is close.
-        The matrix is not invertible,
-        not dissimilar to how we cannot divide scalars by zero.
-        The remainder of the message begins at the top showing were the error first happened in your code and then the various places where intermediate functions were called,
-        until the actual piece of Sage where the problem occurred.
-        Sometimes this information will give you some clues,
-        sometimes it is totally undecipherable.
-        So do not let it scare you if it seems mysterious,
-        but do remember to always read the last line first,
-        then go back and read the first few lines for something that looks like your code.
+        Clique à esquerda da mensagem de erro para a expandir completamente
+        (outro clique a esconde, e um terceiro clique traz de volta a 
+        forma abreviada). Leia primeiramente a parte inferior da mensagem
+        de erro, é a sua melhor explicação. Aqui, um
+         <c>ZeroDivisionError</c> não está 100% correto, mas se aproxima.
+        A matriz não é invertível, não diferindo muito de como não
+        podemos dividir escalares por zero. O restante da mensagem começa
+        mostrando onde o erro aconteceu primeiro no seu código, em seguida
+        vários locais onde funções intermediárias foram chamadas, até 
+        o ponto específico do Sage onde o problema ocorreu. Ocasionalmente
+        essas mensagens te darão algumas pistas, mas outras vezes
+        elas são completamente indecifráveis. Não se deixe amedrontar se
+        elas parecerem misteriorsas, mas sempre lembre de ler primeiramente
+        a última linha, então volte e leia as linhas iniciais para algo
+        que parece com o seu código.
       </p>
     </subsection>
 
     <subsection permid="OaF">
-      <title>Annotating Your Work</title>
+      <title>Comentando seu Trabalho</title>
       <p permid="iie">
-        It is easy to comment on your work when you use the Sage Notebook.
-        (The following only applies if you are reading this within a Sage Notebook.
-        If you are not,
-        then perhaps you can go open up a worksheet in the Sage Notebook and experiment there.)
-        You can open up a small word-processor by hovering your mouse until you get a skinny blue bar again,
-        but now when you click, also hold the SHIFT key at the same time.
-        Experiment with fonts, colors,
-        bullet lists, etc and then click the
-        <q>Save changes</q> button to exit.
-        Double-click on your text if you need to go back and edit it later.
+        Comentar seu trabalho quando se utiliza o Notebook Sage é bem fácil.
+        (O que vem a seguir se aplica apenas se você está lendo isso dentro de um Notebook
+        Sage. Caso contrário você pode abrir um worksheet no Notebook Sage e tentar lá)
+        Você pode abrir um pequeno processador de texto passando o mouse até você
+        ver uma fina barra azul novamente, agora clique nela mas segurando a tecla SHIFT
+        ao mesmo tempo.
+        Tente algumas fontes, cores, listas, etc, e então clique no botão
+        <q>Save changes</q> para sair.
+        Dê um clique duplo no seu texto para editá-lo novamente.
       </p>
 
       <p permid="Opn">
-        Open the word-processor again to create a new bit of text
-        (maybe next to the empty compute cell just below).
-        Type all of the following <em>exactly,</em>
+        Abra o processor de textos novamente e crie um novo texto (talvez junto da
+        célula de cálculo vazia, logo abaixo)
+        Digite <em>exatamente</em> o texto a seguir
         <cd>
           <cline>Pythagorean Theorem: $c^2=a^2+b^2$</cline>
         </cd>
-        and save your changes.
-        The symbols between the dollar signs are written according to the mathematical typesetting language known as <tex/> <mdash/> cruise the internet to learn more about this very popular tool.
-        (Well, it is extremely popular among mathematicians and physical scientists.)
+        e salve as alterações.
+        Os símbolos entre os cifrões são escritos de acordo com a linguagem de
+        formatação matemática conhecida como <tex/> <mdash/> pesquise na internet
+        para descobrir mais sobre essa popular ferramenta.
+        (Bem, é extremamente popular entre matemáticos e físicos)
       </p>
 
       <sage/>
     </subsection>
 
     <subsection permid="uhO">
-      <title>Lists</title>
+      <title>Listas</title>
       <p permid="uww">
-        Much of our interaction with sets will be through Sage lists.
-        These are not really sets <mdash/> they allow duplicates,
-        and order matters.
-        But they are so close to sets,
-        and so easy and powerful to use that we will use them regularly.
-        We will use a fun made-up list for practice,
-        the quote marks mean the items are just text,
-        with no special mathematical meaning.
-        Execute these compute cells as we work through them.
+        Muitas das nossas interações com conjuntos se darão através
+        de listas em Sage. Tais listas não são exatamente conjuntos
+        <mdash/> eles permitem elementos duplicados e a ordem importa.
+        No entanto eles estão tão próximos de conjuntos, e são tão 
+        simples e eficazes que as utilizaremos regularmente.
+        Criamos uma divertida lista para praticar, as
+        aspas significam que os itens são apenas texto, sem
+        significado especial. Execute essas células de cálculo
+        a medida que as apresentamos.
       </p>
 
             <sage permid="Nzc">
                 <input>
-            zoo = ['snake', 'parrot', 'elephant', 'baboon', 'beetle']
+            zoo = ['cobra', 'papagaio', 'elefante', 'babuino', 'bezouro']
             zoo
             </input>
                 <output>
-            ['snake', 'parrot', 'elephant', 'baboon', 'beetle']
+            ['cobra', 'papagaio', 'elefante', 'babuino', 'bezouro']
             </output>
             </sage>
 
       <p permid="aDF">
-        So the square brackets define the boundaries of our list,
-        commas separate items, and we can give the list a name.
-        To work with just one element of the list,
-        we use the name and a pair of brackets with an index.
-        Notice that lists have indices that
-        <em>begin counting at zero</em>.
+        Então os colchetes definem os limites da nossa lista,
+        vírgulas separam os itens e, finalmente, podemos
+        dar um nome para a lista. Para trabalhar apenas com um
+        item da lista usamos o nome da lista e um par de
+        colchetes com o índice. Observe que os índices
+        das listas <em>começam sempre em zero</em>.
+        Isso pode parecer estranho mas vai ser natural no futuro.
         This will seem odd at first and will seem very natural later.
       </p>
 
             <sage permid="tGl">
                 <input>zoo[2]</input>
-                <output>'elephant'</output>
+                <output>'elefante'</output>
             </sage>
 
       <p permid="GKO">
-        We can add a new creature to the zoo,
-        it is joined up at the far right end.
+        Podemos adicionar um novo animal no zoo, ele é 
+        colocada no final da lista, a direita dos demais elementos.
       </p>
 
             <sage permid="ZNu">
-                <input>zoo.append('ostrich'); zoo</input>
-                <output>['snake', 'parrot', 'elephant', 'baboon', 'beetle', 'ostrich']</output>
+                <input>zoo.append('avestruz'); zoo</input>
+                <output>['cobra', 'papagaio', 'elefante', 'babuino', 'bezouro', 'avestruz']</output>
             </sage>
 
       <p permid="mRX">
-        We can remove a creature.
+        Podemos remover um elemento
       </p>
 
             <sage permid="FUD">
                 <input>
-            zoo.remove('parrot')
+            zoo.remove('papagaio')
             zoo
             </input>
-                <output>['snake', 'elephant', 'baboon', 'beetle', 'ostrich']</output>
+                <output>['cobra', 'elefante', 'babuino', 'bezouro', 'avestruz']</output>
             </sage>
 
       <p permid="SZg">
-        We can extract a sublist.
-        Here we start with element 1
-        (the elephant)
-        and go all the way up to, <em>but not including</em>, element 3
-        (the beetle).
-        Again a bit odd, but it will feel natural later.
-        For now, notice that we are extracting two elements of the lists,
-        exactly <m>3-1=2</m> elements.
+        Podemos extrair uma sublista. Aqui, podemos começar
+        com o elemento 1 (o elefante) e ir até, <em>sem
+        incluir</em>, o elemento 3 (o bezouro).
+        Novamente, um pouco estranho, mas vai parecer natural depois.
+        Por enquanto, note que estamos extraindo dois itens da lista,
+        exatamente <m>3-1=2</m> elementos.
       </p>
 
             <sage permid="mbM">
                 <input>
-            mammals = zoo[1:3]
-            mammals
+            mamiferos = zoo[1:3]
+            mamiferos
             </input>
-                <output>['elephant', 'baboon']</output>
+                <output>['elfante', 'babuino']</output>
             </sage>
 
       <p permid="zgp">
-        Often we will want to see if two lists are equal.
-        To do that we will need to sort a list first.
-        A function creates a new, sorted list,
-        leaving the original alone.
-        So we need to save the new one with a new name.
+        Frequentemente iremos checar se duas listas
+        são iguais. Para fazer isso será necessário ordenar
+        a lista primeiro. Uma função cria uma nova lista,
+        ordenada, deixando a lista original inalterada.
+        Precisamos então salvar essa lista nova com um novo nome.
       </p>
 
             <sage permid="SiV">
                 <input>
-            newzoo = sorted(zoo)
-            newzoo
+            novozoo = sorted(zoo)
+            novozoo
             </input>
-                <output>['baboon', 'beetle', 'elephant', 'ostrich', 'snake']</output>
+                <output>['avestruz', 'babuino', 'bezouro','cobra','elefante']</output>
             </sage>
             <sage permid="yqe">
                 <input>
             zoo.sort()
             zoo
             </input>
-                <output>['baboon', 'beetle', 'elephant', 'ostrich', 'snake']</output>
+                <output>['avestruz', 'babuino', 'bezouro','cobra','elefante']</output>
             </sage>
 
       <p permid="fny">
-        Notice that if you run this last compute cell your zoo has changed and some commands above will not necessarily execute the same way.
-        If you want to experiment,
-        go all the way back to the first creation of the zoo and start executing cells again from there with a fresh zoo.
+        Observe que, ao executar a última célula, o seu zoo mudou e
+        alguns dos comandos anteriores não serão executados da mesma forma. Se
+        quiser testar, volte para o início, na criação do zoo e execute
+        as célula novamente a partir do início com um zoo novo.
       </p>
 
       <p permid="LuH">
-        A construction called a <term>list comprehension</term> is especially powerful,
-        especially since it almost exactly mirrors notation we use to describe sets.
-        Suppose we want to form the plural of the names of the creatures in our zoo.
-        We build a new list, based on all of the elements of our old list.
+        Uma construção chamada de <term>compreensão de listas</term> is especialmente
+        poderosa,  principalmente porque ela se assemelha bastante com 
+        a notação que usamos para descrever conjuntos. Suponha que queremos
+        formar o plural dos nomes das animais no nosso zoo. Constrímos
+        uma nova lista baseada nos elementos da lista antiga.
       </p>
 
             <sage permid="exn">
                 <input>
-            plurality_zoo = [animal+'s' for animal in zoo]
-            plurality_zoo
+            zoo_plural = [animal+'s' for animal in zoo]
+            zoo_plural
             </input>
-                <output>['baboons', 'beetles', 'elephants', 'ostrichs', 'snakes']</output>
+                <output>['avestruzs', 'babuinos', 'bezouros','cobras','elefantes']</output>
             </sage>
 
       <p permid="rBQ">
-        Almost like it says: we add an <q>s</q> to each animal name,
-        for each animal in the zoo, and place them in a new list.
-        Perfect.
-        (Except for getting the plural of <q>ostrich</q> wrong.)
+        É quase como dizer: adicione um <q>s</q> em cada nome de animal, 
+        para cada animal no zoo, e o coloque no fim da lista.
+        Perfeito.
+        (Exceto pelo faot do plural de <q>avestruz</q> estar errado.)
       </p>
     </subsection>
 
     <subsection permid="aoX">
-      <title>Lists of Integers</title>
+      <title>Listas de Inteiros</title>
       <p permid="XIZ">
-        One final type of list, with numbers this time.
-        The <c>srange()</c> function will create lists of integers.
-        (The <q>s</q> in the name stands for <q>Sage</q>
-        and so will produce integers that Sage understands best.
-        Many early difficulties with Sage and group theory can be alleviated by using only this command to create lists of integers.)
-        In its simplest form an invocation like <c>srange(12)</c> will create a list of 12 integers,
-        <em>starting at zero</em> and working up to,
-        <em>but not including</em>, 12.
-        Does this sound familiar?
+        Um tipo final de lista, com números agora.
+        A função <c>srange()</c> cria uma lista de inteiros
+        (O <q>s</q> no nome da função vem de <q>Sage</q>
+        pois produz inteiros que o Sage entende mais adequadamente. 
+        Muitas das dificuldades com Sage e teoria dos grupos podem
+        ser amenizadas usando apenas esse comando para criar listas
+        de inteiros). Em sua forma mais simples, um comando como
+        <c>srange(12)</c> cria uma lista de 12 inteiros,
+        <em>começando no zero</em> e subindo até
+        <em>mas sem incluir</em>, o 12.
+        Parece familiar?
       </p>
 
             <sage permid="KEw">
-                <input>dozen = srange(12); dozen</input>
+                <input>duzia = srange(12); dozen</input>
                 <output>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]</output>
             </sage>
 
       <p permid="DQi">
-        Here are two other forms,
-        that you should be able to understand by studying the examples.
+        Existem duas outras formas de usar o <c>srange()</c>. Você
+        deve conseguir entender observando os exemplos
       </p>
 
             <sage permid="qLF">
-                <input>teens = srange(13, 20); teens</input>
+                <input>tees = srange(13, 20); teens</input>
                 <output>[13, 14, 15, 16, 17, 18, 19]</output>
             </sage>
             <sage permid="WSO">
-                <input>decades = srange(1900, 2000, 10); decades</input>
+                <input>decadas = srange(1900, 2000, 10); decadas</input>
                 <output>[1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990]</output>
             </sage>
     </subsection>
 
     <subsection permid="Gwg">
-      <title>Saving and Sharing Your Work</title>
+      <title>Salvando e Compartilhando seu Trabalho</title>
       <p permid="jXr">
-        There is a <q>Save</q> button in the upper-right corner of the Sage Notebook.
-        This will save a current copy of your worksheet that you can retrieve your work from within your notebook again later,
-        though you have to re-execute all the cells when you re-open the worksheet.
+        Existe um botão <q>Save</q> no canto superior direito do Notebook Sage.
+        Isso vai salvar uma cópia atual do seu worksheet e você poderá
+        recuperar o seu trabalho no futuro, no entanto você 
+        deverá re-executar todas as células quando você reabrir o worksheet.
       </p>
 
       <p permid="QeA">
-        There is also a <q>File</q> drop-down list, on the left,
-        just above your very top compute cell
-        (not be confused with your browser's File menu item!).
-        You will see a choice here labeled
-        <q>Save worksheet to a file...</q> When you do this,
-        you are creating a copy of your worksheet in the <c>sws</c> format
-        (short for <q>Sage WorkSheet</q>).
-        You can email this file, or post it on a website,
-        for other Sage users and they can use the <q>Upload</q>
-        link on the homepage of their notebook to incorporate a copy of your worksheet into their notebook.
+        Existe também uma lista de comandos sob  <q>File</q>, no 
+        canto superior esquerdo, logo acima da sua primeira célula.
+        (Não confundir com o menu File/Arquivo do seu navegador!).
+        Você deverá encontrar uma opção com o nome
+        <q>Save worksheet to a file...</q> Ao fazer isso, você
+        está criando uma cópia do seu worksheet no formato <c>sws</c>
+        (abreviação para <q>Sage WorkSheet</q>).
+        Você pode enviar esse arquivo por e-mail, ou publicar em um
+        site, e outros usuários do Sage podem usar o link <q>Upload</q>
+        na página inicial de seus Notebooks para incorporar uma cópia
+        do seu worksheet no notebook deles.
       </p>
 
       <p permid="wlJ">
-        There are other ways to share worksheets that you can experiment with,
-        but this gives you one way to share any worksheet with anybody almost anywhere.
+        Existem outras formas de compartilhar worksheets que você
+        pode experimentar, mas essa forma permite que você compartilhe
+        seu worksheet com qualquer um em quase qualquer ambiente.
       </p>
 
       <p permid="csS">
-        We have covered a lot here in this section,
-        so come back later to pick up tidbits you might have missed.
-        There are also many more features in the Sage Notebook that we have not covered.
+        Cobrimos muito nessa selao, então fique a vontade para voltar
+        depois para pegar os detalhes que você pode ter deixado passar.
+        Existem também muitas oturas funcionalidades no 
+        Notebook Sage que não cobrimos.
       </p>
     </subsection>
 
   </section>
 
   <exercises xml:id="sets-sage-exercises" permid="SKy">
-    <title>Sage Exercises</title>
+    <title>Exercícios Sage</title>
     <exercise number="1" permid="jnk" xml:id="sets-sage-exercise-cocalc">
       <statement>
         <p permid="wHi">
-          This exercise is just about making sure you know how to use Sage.
-          You may be using the Sage Notebook server the online CoCalc service through your web browser.
-          In either event, create a new worksheet.
-          Do some non-trivial computation,
-          maybe a pretty plot or some gruesome numerical computation to an insane precision.
-          Create an interesting list and experiment with it some.
-          Maybe include some nicely formatted text or <tex/> using the included mini-word-processor of the Sage Notebook
-          (hover until a blue bar appears between cells and then shift-click)
-          or create commentary in cells within CoCalc using the <term>magics</term>
-          <c>%html</c> or <c>%md</c> on a line of their own followed by text in <init>HTML</init> or Markdown syntax
+          Esse exercício serve apenas para garantir que você sabe
+          como usar o Sage. Você pode usar o servidor Sage Notebook
+          ou o serviço online do CoCalc no seu navegador.
+          De qualquer forma, crie um novo worksheet. Faça algum
+          cálculo não trivial, talvez algum belo gráfico ou um 
+          cálculo numérico horrível com uma precisão insana. Crie
+          alguma lista e a explore um pouco. Talvez inclua algum 
+          texto bem formatado ou  <tex/> usando o mini processador
+          de textos incluso no Sage.
+          (passe o mouse até a barra azul aparecer entre as células, aperte
+          SHIFT e clique) ou crie comentários nas células no CoCalc
+          usando o <term>magics</term>,
+          <c>%html</c> ou <c>%md</c> em uma linha própria seguida de algum texto
+          em <init>HTML</init> ou com a sintaxe Markdown.
           (respectively).
         </p>
 
         <p permid="cOr">
-          Use whatever mechanism your instructor has in place for submitting your work.
-          Or save your worksheet and then trade with a classmate.
+          Use qualquer mecanismo que o seu professor criou para enviar
+          o seu trabalho, ou salve o seu worksheet e compartilhe com um
+          colega.
         </p>
       </statement>
     </exercise>
